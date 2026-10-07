@@ -1,210 +1,281 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:1565C0,100:00BFA5&height=190&section=header&text=2035.+Partition+Into+Two+Arrays&fontSize=34&fontColor=FFFFFF&fontAlign=50&fontAlignY=55&animation=fadeIn&desc=Python+%7C+vectorized+fast+path+%2B+exact+pure+fallback&descAlign=50&descAlignY=72&descFontColor=FFFFFF)
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=21&duration=3200&pause=800&color=0B7285&center=true&vCenter=true&width=880&lines=2035+%C2%B7+Partition+Array+Into+Two+Arrays;Python3+lane+%C2%B7+C-level+enumeration+%2B+bend+sweep;962+ms+%C2%B7+20.23+MB+%C2%B7+receipt+attached" alt="typing line"/>
+</p>
 
-<div align="center">
+<h1 align="center">Partition Array Into Two Arrays to Minimize Sum Difference</h1>
 
-| 🧪 Testcases | ⏱️ Runtime | 🚀 Beats | 🧠 Memory |  Paths |
-| :---: | :---: | :---: | :---: | :---: |
-| **201 / 201** | **235 ms** | **99.76 %** | **33.15 MB** | **2** |
+<p align="center">
+  <sub>LeetCode 2035 · Hard · the memory-lean vertex of a two-build Pareto frontier · every number below is screenshot-backed</sub>
+</p>
 
-<img src="https://private-user-images.githubusercontent.com/74038190/240820597-a762dc06-3a4c-432e-8679-a99fe8a433b7.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTEzNjQwNjgsIm5iZiI6MTc5MTM2Mzc2OCwicGF0aCI6Ii83NDAzODE5MC8yNDA4MjA1OTctYTc2MmRjMDYtM2E0Yy00MzJlLTg2NzktYTk5ZmU4YTQzM2I3LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA3VDA5MDI0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMxMTA2MTI2M2JmYzA2MDY3YTQ1YzZiMjE0ZGFlM2MyZWMyZWFiYjdmMjZlYjVmZWZiNmNiYmU0ZGYxMjU5ZTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmdpZiJ9.YfZkv8Omz1aG5qfi-fJ_NJhg5BeA2WyUD-HggbHhw60" width="340" alt="banner">
+<p align="center">
+  <img src="https://img.shields.io/badge/LeetCode-2035%20%C2%B7%20Hard-0b7285?style=flat-square&logo=leetcode&logoColor=white" alt="problem"/>
+  <img src="https://img.shields.io/badge/Python3-3.x-3572A5?style=flat-square" alt="language"/>
+  <img src="https://img.shields.io/badge/Accepted-201%2F201-1a7f37?style=flat-square" alt="verdict"/>
+  <img src="https://img.shields.io/badge/Runtime-962%20ms%20%C2%B7%2098.31%25-1098ad?style=flat-square" alt="runtime"/>
+  <img src="https://img.shields.io/badge/Memory-20.23%20MB%20%C2%B7%2098.07%25-0b7285?style=flat-square" alt="memory"/>
+  <img src="https://img.shields.io/badge/Proof-Oct%2007%2C%202026-444444?style=flat-square" alt="proof"/>
+</p>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=1400&pause=500&color=00BFA5&center=true&vCenter=true&width=440&lines=Python+%7C+235+ms+%7C+beats+99.76%25;numpy+path+when+present,+pure+path+always;Doubling+in+comprehensions,+staircase+in+locals" alt="animated typing title">
+<!-- 🎬 STICKER SLOT A · ganti nilai src di bawah dengan salah satu link catatan:
+     https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif
+     https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif
+     https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif
+     https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif
+     https://media.giphy.com/media/26n6WywJyh39n9pBu/giphy.gif
+     https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif
+     https://media.giphy.com/media/26BRBKzUi8g3uO7uw/giphy.gif
+-->
+<p align="center">
+  <img src="https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" width="340" alt="sticker slot A"/>
+</p>
 
-![Language](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Status](https://img.shields.io/badge/Status-Accepted-00C853?style=flat&logo=leetcode&logoColor=white) ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-C73E3E?style=flat) ![Paths](https://img.shields.io/badge/Kernel-dual%20path-00BFA5?style=flat)
+---
 
-$$\min \left| \sum_{i \in A} a_i - \sum_{j \in B} a_j \right| \quad \text{s.t.} \quad |A| = |B| = n$$
+## Contents
 
-</div>
+- [The receipt, twice over](#the-receipt-twice-over)
+- [The Pareto ledger: two Python vertices](#the-pareto-ledger-two-python-vertices)
+- [The problem, minus the fog](#the-problem-minus-the-fog)
+- [The structural fact](#the-structural-fact)
+- [The engine, part by part](#the-engine-part-by-part)
+- [Variable dictionary](#variable-dictionary)
+- [Trace, frame by frame](#trace-frame-by-frame)
+- [Complexity, stated plain](#complexity-stated-plain)
+- [Failure modes, closed](#failure-modes-closed)
+- [Source, verbatim](#source-verbatim)
+- [House rules](#house-rules)
 
-<div align="center">
+---
 
-**[📐 Fact](#-the-structural-fact) · [🔀 Paths](#-the-two-paths) · [🧵 Pipeline](#-the-pipeline) · [🔬 Mechanism](#-mechanism) · [🧾 Traces](#-witness-traces) · [💻 Source](#-source) · [🛡️ Notes](#-engineering-notes) · [📊 Complexity](#-complexity)**
+## The receipt, twice over
 
-</div>
+Same bytes, two judge runs, four minutes apart. Both are filed here because the difference between them is the point: labels move, work does not.
 
-> [!NOTE]
-> **Judge record:** Accepted 201 / 201, runtime 235 ms, beats 99.76 %, memory 33.15 MB.
+| Run | Verdict | Cases | Runtime | Beat | Memory | Beat | Proof |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| A · 20:25 | Accepted | 201/201 | 966 ms | 98.31% | 20.08 MB | 99.52% | screenshot, Oct 07 2026 |
+| B · 20:30 | Accepted | 201/201 | 962 ms | 98.31% | 20.23 MB | 98.07% | screenshot, Oct 07 2026 |
 
-> [!CAUTION]
-> **Forensic record, empty buckets:** the first vectorized build seeded future buckets with None; the first concatenate raised TypeError on None - v. Empty int64 arrays closed the hole; the pure path never had it because empty lists subtract cleanly.
+Read the deltas honestly. Runtime improved by 4 ms while its percentile did not move; memory grew by 0.15 MB while its percentile dropped 1.45 points. Neither change came from the code, which was identical. Both came from the judge's machine and its submission pool at that minute. That is what a runtime label is: a property of the harness, measured against a moving crowd.
 
-## 📐 The Structural Fact
+---
 
-Signing bijection: n plus, n minus, objective |D|. Halves report (k, d); D = d1 + d2 under k1 + k2 = n; bucket pairs cover the whole space. The doubling identity grows buckets exactly: after t elements, bucket k holds C(t, k) signed sums, and step t+1 applies bucket[k] = (bucket[k] - v) ⊕ (bucket[k-1] + v).
+## The Pareto ledger: two Python vertices
 
-## 🔀 The Two Paths
+This lane ships two builds, and neither dominates the other. This folder contains the memory-lean vertex. The runtime-lean vertex stays in the ledger as an archived build.
+
+| Build | Enumeration | Probe | Runtime | Beat | Memory | Beat | Status |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| pure sweep (this folder) | C-level `combinations` + `sum` + `sorted` | monotonic bend sweep, Python loop | 962 ms | 98.31% | 20.23 MB | 98.07% | live here |
+| numpy path (archived) | vectorized concatenate | `searchsorted` | 227 ms | 99.76% | 32.94 MB | 7.49% | ledger only |
+
+The trade is exact and unavoidable in CPython. The numpy build vectorizes the 32,768-iteration sweep and pays for it with numpy's resident footprint, roughly fifteen megabytes of imported C library that the judge counts against the process even when idle. The pure build refuses that import, keeps the process at interpreter baseline, and pays instead in interpreter-level loop time. One axis bought, one axis spent. Any claim of a Python3 build that wins both axes simultaneously against this distribution is a claim this repo will not make, because no standard-library mechanism vectorizes a pairwise search without resident megabytes.
+
+---
+
+## The problem, minus the fog
+
+You get `2n` integers. Split them into two piles of exactly `n` each. Minimize the absolute difference of the pile sums. Brute force is $\binom{2n}{n}$ splits; at `n = 15` that is 155 million partitions, far past any time budget. The winning shape is meet-in-the-middle, and this kernel is meet-in-the-middle with every ounce of enumeration pushed down into C-level iterators.
+
+---
+
+## The structural fact
+
+Let `total` be the sum of everything and `s` the sum of the chosen pile of size `n`. The other pile sums to `total - s`, so the score is `|total - 2*s|`. Cut the input into `left` and `right`, `n` elements each. Any valid pile takes `k` elements from the left and `n - k` from the right, so `s = sL + sR`. Fix `k` and `sL`, write `T = total - 2*sL`, and the score becomes `|T - 2*sR|`: a V-shaped function over the sorted right bucket. It falls while `2*sR <= T` and climbs after, so the minimum per `sL` lives at the bend — the largest index `q` with `2*rk[q] <= T`, or its neighbor `q + 1`. Two candidates, never three.
+
+> Enumerate in C, walk the bend with one descending pointer, and let the V-shape do the arguing. The interpreter only books the results.
+
+---
+
+## The engine, part by part
 
 ```mermaid
 flowchart TD
-    E{numpy importable?} -- yes --> V[vector path: concatenate doubling, in-place sort, searchsorted probes]
-    E -- no --> P[pure path: comprehension doubling, list.sort, staircase]
-    V --> Z[int result]
-    P --> Z
-    classDef a fill:#1565C0,stroke:#333,color:#fff
-    classDef b fill:#00BFA5,stroke:#333,color:#000
-    classDef c fill:#263238,stroke:#333,color:#fff
-    class E a
-    class V,P b
-    class Z c
+    A["nums · 2n elements"] --> B["split: left, right"]
+    B --> C["per k: lk = sorted map sum combinations left k"]
+    B --> D["per k: rk = sorted map sum combinations right n-k"]
+    C --> E["sweep lk ascending"]
+    D --> F["pointer q descends while 2 rk q greater than T"]
+    E --> F
+    F --> G["candidates q and q + 1, both guarded"]
+    G --> H{"d == 0 ?"}
+    H -- yes --> I["return 0 immediately"]
+    H -- no --> J["best keeps the smaller d"]
+    J --> K["next sL, q never rewinds"]
+    K --> E
+    J --> L["return best"]
 ```
+
+### 1. C-level enumeration — `comb`, `lk`, `rk`
+Each bucket is one expression: `sorted(map(sum, comb(half, r)))`. The combinations iterator, the `sum` reductions, and the sort all execute in C; the interpreter sees one assignment per bucket. No Python loop touches a single mask, and no intermediate list survives the expression.
+
+### 2. The monotonic bend sweep — `q`, `T`
+Within a bucket pair, `lk` is visited ascending, so `T = total - 2*sL` is descending, so the bend index `q` can only move down. The `while` guard `2*rk[q] > T` walks `q` to the bend and leaves it there; across the whole bucket pair the pointer travels at most `len(rk)` steps total, not per query. The search cost per bucket pair is `O(len(lk) + len(rk))`, with no binary search and no logarithmic factor.
+
+### 3. Two guarded candidates — `d`
+Per `sL` the kernel tests `rk[q]` (guarded by `q >= 0`) and `rk[q + 1]` (guarded by `q < last`). Those guards are the entire memory-safety story: `q` starts at `len(rk) - 1`, only ever decrements, and may legally land on `-1`, in which case the first candidate vanishes and the second alone covers the all-above-T case.
+
+### 4. Early exit at zero — `return 0`
+Zero is the absolute lower bound of an absolute value. The moment any candidate hits `d == 0`, no later candidate can beat it, so the kernel returns on the spot. The check costs one comparison per improvement and pays for itself on every instance whose optimum is a perfect tie.
+
+### 5. Memory shape — transient buckets
+At any instant exactly one bucket pair is alive: at most `2 * C(15, 7) = 12,870` integers, roughly a third of a megabyte, freed before the next `k`. There is no numpy, no resident C library, no permanent payload. The process sits at interpreter baseline plus change, which is why the memory percentile jumped from 7.49 to the high nineties between builds.
+
+### 6. One kernel, one door — `_kernel_2035`, `Solution.minimumDifference`
+All logic lives in the private kernel. The public method is a single delegating expression. Nothing is duplicated, so nothing can drift.
+
+---
+
+## Variable dictionary
+
+| Name | Shape | Job |
+| :-- | :-- | :-- |
+| `n` | int | half-length of `nums` |
+| `total` | int | sum of all `2n` elements |
+| `left`, `right` | list | the two halves, sliced once |
+| `comb` | bound builtin | local alias for `combinations`, hot-path binding |
+| `best` | int | running minimum, seeded `1 << 62` |
+| `k` | int | cardinality taken from the left half |
+| `lk` | list | sorted left bucket of cardinality `k` |
+| `rk` | list | sorted right bucket of cardinality `n - k` |
+| `q` | int | bend pointer, largest index with `2*rk[q] <= T`, monotone descending |
+| `last` | int | `len(rk) - 1`, hoisted for the second-candidate guard |
+| `sL` | int | current left sum, ascending |
+| `T` | int | `total - 2*sL`, the descending probe target |
+| `d` | int | candidate cost at the bend, folded to non-negative |
+
+---
+
+## Trace, frame by frame
+
+Input `nums = [3, 9, 7, 3]`, so `n = 2`, `total = 22`, `left = [3, 9]`, `right = [7, 3]`.
 
 ```text
-step t:   buckets[k] = (buckets[k] - v) ⊕ (buckets[k-1] + v)
-sizes:    C(t,k)     =  C(t,k)        +  C(t,k-1)
+k=0  lk=[0]      rk=[10]    q=0  last=0
+     sL=0   T=22   2*10=20 <= 22, q holds
+            cand q=0    d=|22-20|=2   best=2
+            q == last, second candidate skipped
+
+k=1  lk=[3,9]    rk=[3,7]   q=1  last=1
+     sL=3   T=16   2*7=14 <= 16, q holds
+            cand q=1    d=|16-14|=2   best=2
+            q == last, second candidate skipped
+     sL=9   T=4    2*7=14 > 4  -> q=0
+                    2*3=6  > 4  -> q=-1
+            q < 0, first candidate skipped
+            cand q+1=0  d=|4-6|=2     best=2
+
+k=2  lk=[12]     rk=[0]     q=0  last=0
+     sL=12  T=-2   2*0=0 > -2  -> q=-1
+            q < 0, first candidate skipped
+            cand q+1=0  d=|-2-0|=2    best=2
+
+return 2
 ```
 
-## 🧵 The Pipeline
+The judge expects 2 on this case. Note the `k=1` second row: the pointer falls off the front of `rk`, the first guard dissolves, and the second candidate alone carries the query. Both extremes of the guard pair earn their keep inside one toy instance.
 
-* Vector path: per bucket pair, `searchsorted(B, -A)` yields all lower bounds at once; two clipped gathers probe lo and lo-1; two `abs().min()` reductions settle the pair; the Python loop runs n+1 iterations per testcase.
-* Pure path: comprehension doubling at C speed, then a staircase two-pointer with local refs and branch-light abs.
+---
 
-## 🔬 Mechanism
+## Complexity, stated plain
 
-* `_kernel_np` keeps every bucket as an int64 array; concatenate never mutates shared state; sorts are in place.
-* `_kernel_py` descends k from n to 1 so the right-hand side always reads the previous step's bucket.
-* `_minimum_difference_kernel` dispatches once per call; both paths return the identical integer.
-* `minimumDifference` and `minimum_difference` delegate, zero duplication.
+| Phase | Shape | Counted at n = 15 |
+| :-- | :-- | :-- |
+| Bucket enumeration and sort | O(2^n log C(n, n/2)), all in C | 32,768 sums and sorts per half |
+| Bend sweep | O(2^n) pointer steps plus O(2^n) candidate pairs | 65,536 pointer budget total, 32,768 queries x 2 candidates |
+| Peak payload | O(C(n, n/2)) transient | 12,870 integers alive at once, about 0.3 MB |
+| Permanent payload | O(n) | the two input slices and nothing else |
 
-## 🧾 Witness Traces
+Two honesty notes. The 962 ms label is the harness measuring a CPython interpreter loop against a pool whose fast end is vectorized C; the algorithm's own work is the four rows above with nothing spare. The 20.23 MB label is the harness measuring process residency; the algorithm's own payload is the 0.3 MB row. Run-to-run movement of both labels, documented two sections up, is harness noise, not code behavior.
 
-| Input | n | Certifying event | Answer |
-| :--- | :---: | :--- | :---: |
-| `[3,9,7,3]` | 2 | probes bank 2 | **2** |
-| `[-36,36]` | 1 | only signings exist | **72** |
-| `[2,-1,0,4,-2,-9]` | 3 | zero met, immediate return | **0** |
-| `[5,-5]` | 1 | single signing per side | **10** |
+---
 
-## 💻 Source
+## Failure modes, closed
+
+1. **Pointer underflow.** `q` may reach `-1`; the first candidate is fenced by `q >= 0`, the second by `q < last`, and at `q = -1` the second candidate is exactly `rk[0]`, the correct all-above-T answer. No index outside `[0, last]` is ever dereferenced.
+2. **Pointer rewind.** Impossible: `lk` ascending forces `T` descending, and the `while` body only decrements. The monotonicity audit (R5) is one line of ordering algebra, not an assumption.
+3. **Empty bucket.** Impossible: `C(n, k) >= 1` for every `k` in `[0, n]`, so `lk` and `rk` are non-empty and `last` is never negative.
+4. **`best` escaping as the seed.** Impossible: the `k = 0` iteration always evaluates at least one candidate against a non-empty `rk`, so `best` holds a real cost before the return.
+5. **Premature zero.** Sound: `0` is the global minimum of an absolute value, so an early return at `d == 0` cannot discard a better answer (R12, strict-bound audit).
+6. **Import fragility.** Removed at the source: the kernel depends on `itertools` alone, which is standard library and always present; there is no optional dependency to fall back from.
+
+---
+
+## Source, verbatim
 
 <details>
-<summary><strong>🔓 Expand the accepted Python source</strong></summary>
+<summary><strong>Unfold the Python3 kernel</strong></summary>
 
 ```python
-try:
-    import numpy as _np
-except Exception:
-    _np = None
+from itertools import combinations
 
-
-def _kernel_np(nums, np):
+def _kernel_2035(nums):
     n = len(nums) >> 1
-    bu0 = [np.zeros(1, dtype=np.int64)]
-    bu1 = [np.zeros(1, dtype=np.int64)]
-    for _ in range(n):
-        bu0.append(np.empty(0, dtype=np.int64))
-        bu1.append(np.empty(0, dtype=np.int64))
-    for v in nums[:n]:
-        for k in range(n, 0, -1):
-            bu0[k] = np.concatenate((bu0[k] - v, bu0[k - 1] + v))
-        bu0[0] = bu0[0] - v
-    for v in nums[n:]:
-        for k in range(n, 0, -1):
-            bu1[k] = np.concatenate((bu1[k] - v, bu1[k - 1] + v))
-        bu1[0] = bu1[0] - v
+    total = sum(nums)
+    left = nums[:n]
+    right = nums[n:]
+    comb = combinations
+    best = 1 << 62
     for k in range(n + 1):
-        bu0[k].sort()
-        bu1[k].sort()
-    best = 1 << 60
-    for k1 in range(n + 1):
-        A = bu0[k1]
-        B = bu1[n - k1]
-        nb = B.shape[0]
-        if nb == 0 or A.shape[0] == 0:
-            continue
-        lo = np.searchsorted(B, -A)
-        i1 = np.clip(lo, 0, nb - 1)
-        i2 = np.clip(lo - 1, 0, nb - 1)
-        v1 = np.abs(A + B[i1]).min()
-        v2 = np.abs(A + B[i2]).min()
-        v = v1 if v1 < v2 else v2
-        if v < best:
-            best = v
-            if best == 0:
-                return 0
-    return int(best)
-
-
-def _kernel_py(nums):
-    n = len(nums) >> 1
-    bu0 = [[0]]
-    bu1 = [[0]]
-    for _ in range(n):
-        bu0.append([])
-        bu1.append([])
-    for v in nums[:n]:
-        for k in range(n, 0, -1):
-            bu0[k] = [x - v for x in bu0[k]] + [x + v for x in bu0[k - 1]]
-        bu0[0] = [x - v for x in bu0[0]]
-    for v in nums[n:]:
-        for k in range(n, 0, -1):
-            bu1[k] = [x - v for x in bu1[k]] + [x + v for x in bu1[k - 1]]
-        bu1[0] = [x - v for x in bu1[0]]
-    for k in range(n + 1):
-        bu0[k].sort()
-        bu1[k].sort()
-    best = 1 << 60
-    for k1 in range(n + 1):
-        A = bu0[k1]
-        B = bu1[n - k1]
-        i = 0
-        j = len(B) - 1
-        na = len(A)
-        while i < na and j >= 0:
-            s = A[i] + B[j]
-            if s < 0:
-                v = -s
-                i += 1
-            else:
-                v = s
-                j -= 1
-            if v < best:
-                best = v
-                if v == 0:
-                    return 0
+        lk = sorted(map(sum, comb(left, k)))
+        rk = sorted(map(sum, comb(right, n - k)))
+        q = len(rk) - 1
+        last = len(rk) - 1
+        for sL in lk:
+            T = total - 2 * sL
+            while q >= 0 and 2 * rk[q] > T:
+                q -= 1
+            if q >= 0:
+                d = T - 2 * rk[q]
+                if d < 0:
+                    d = -d
+                if d < best:
+                    best = d
+                    if best == 0:
+                        return 0
+            if q < last:
+                d = T - 2 * rk[q + 1]
+                if d < 0:
+                    d = -d
+                if d < best:
+                    best = d
+                    if best == 0:
+                        return 0
     return best
-
-
-def _minimum_difference_kernel(nums):
-    if _np is not None:
-        return _kernel_np(nums, _np)
-    return _kernel_py(nums)
-
 
 class Solution:
     def minimumDifference(self, nums):
-        return _minimum_difference_kernel(nums)
-
-    def minimum_difference(self, nums):
-        return _minimum_difference_kernel(nums)
+        return _kernel_2035(nums)
 ```
 
 </details>
 
-## 🛡️ Engineering Notes
+---
 
-> [!NOTE]
-> **Path equivalence:** both paths implement the same bijection and the same closest-pair certificate (lower bound plus predecessor), so the dispatched result is interpreter-independent.
+## House rules
 
-> [!WARNING]
-> **Bounds:** bucket sizes follow binomial coefficients exactly; clipped gathers keep every probe inside [0, nb); the pure staircase pointers stay inside their lists by loop condition.
+- Proof before claim: the guards, the monotonic pointer, and the two-candidate prune above are the same lines the interpreter executes.
+- The judge screenshot is the only currency; two runs of identical bytes are filed side by side rather than cherry-picked.
+- One kernel, one public door; duplication is a defect, not a style choice.
+- Pareto honesty: when two builds trade axes, both stay in the ledger and neither is sold as dominant.
+- Performance labels are harness properties; the guarantee this repo makes is strictly minimal work per testcase.
+- Visual assets ship only if they render clean on GitHub; boxy ribbons and broken bars stay out of this dossier.
 
-* **Overflow:** int64 in the vector path, exact integers in the pure path; overflow absent by construction.
-* **Compatibility:** the pure path uses bin(m).count("1") spelling so interpreters without int.bit_count remain supported.
-* **Performance honesty:** 235 ms is a harness label; the vector path reduces Python-level iterations per testcase to n+1 bucket steps.
+---
 
-## 📊 Complexity
+<p align="center">
+  <img src="https://i.ibb.co.com/chg6pCDn/Screenshot-20261007-203027-Chrome.png" width="300" alt="sticker slot B"/>
+</p>
 
-| Measure | Bound |
-| :--- | :---: |
-| Time | $O(2^n)$ element work at C speed, $O(n)$ Python-level steps per testcase on the vector path |
-| Space | $O(2^n)$ bucket storage |
+<p align="center">
+  <img src="https://ghchart.rshah.org/0b7285/taro902" width="90%" alt="commit pulse"/>
+</p>
 
-<div align="center">
+<p align="center">
+  <img src="https://api.star-history.com/svg?repos=taro902/Leetcode-Solution&type=Date" width="62%" alt="star history"/>
+</p>
 
-<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="200" alt="banner small">
-
-*Built under the Tar0 registry: R1 binding from evidence, R2 proof-carrying pruning, R9 single kernel multi-alias.*
-
-</div>
-
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00BFA5,100:1565C0&height=120&section=footer&animation=fadeIn)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=taro902&label=eyes%20on%20this%20dossier&color=0b7285&style=flat-square" alt="view counter"/>
+</p>
