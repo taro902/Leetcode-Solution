@@ -83,14 +83,32 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 ├── 📁 .github/
 │   └── 📁 workflows/
 │       └── ⚙️ auto-atlas.yml
-├──  Problem/
-│   ├── 📁 420-strong-password-checker/
-│   └──  2299-strong-password-checker-ii/
+├── 📁 Problem/
+│   ├── 📁 2299-strong-password-checker-II/
+│   │   └── 📁 c/
+│   │       ├── 📖 README.md
+│   │       └── ⚪ solution.c
+│   └── 📁 420-strong-password-checker /
+│       ├── 📁 c/
+│       │   ├── 📖 README.md
+│       │   └── ⚪ solution.c
+│       ├── 📁 Java/
+│       │   ├── 📖 README.md
+│       │   └── 🟠 solution.java
+│       ├── 📁 JavaScript/
+│       │   ├── 📖 README.md
+│       │   └── 🟡 solution.js
+│       ├── 📁 python3/
+│       │   ├── 📖 README.md
+│       │   └── 🔵 solution.py
+│       └── 📁 racket/
+│           ├── 📖 README.md
+│           └── 🟪 solution.rkt
 ├── ⚖️ LICENSE
-└──  README.md
+└── 📖 README.md
 ```
 
-📊 mirror of the last commit
+📊 15 files · 11 folders
 <!-- AUTO-TREE:END -->
 
 ## 📒 The Live Vault
@@ -98,10 +116,10 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 One line per problem. A checkbox ticks the moment a dossier folder exists; the five-square meter fills, language by language, the moment a source file lands anywhere inside that folder. Create a folder or drop a file anywhere in the repository and the vault recounts itself in the next commit.
 
 <!-- AUTO-LEDGER:START -->
-- [x] **420 · Strong Password Checker** · 🟪⚪🟠🔵 · [dossier](Problem/420-strong-password-checker)
-- [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · [dossier](Problem/2299-strong-password-checker-ii)
+- [x] **2299 · Strong Password Checker Ii** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
+- [x] **420 · Strong Password Checker ** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker )
 
-📊 2 problems · meter order: Racket · C · Java · JavaScript · Python
+📊 2 problems · 12 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 ## 🌐 Language Spectrum
