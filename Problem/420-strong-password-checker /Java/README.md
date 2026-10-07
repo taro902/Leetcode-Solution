@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:6A1B9A,100:F57F17&height=190&section=header&text=420.+Strong+Password+Checker&fontSize=38&fontColor=FFFFFF&fontAlign=50&fontAlignY=55&animation=fadeIn&desc=Java+port+%7C+closed-form+mod-class+deletion+greedy&descAlign=50&descAlignY=72&descFontColor=FFFFFF)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:5382A1,100:F89820&height=190&section=header&text=420.+Strong+Password+Checker&fontSize=38&fontColor=FFFFFF&fontAlign=50&fontAlignY=55&animation=fadeIn&desc=Java+port+%7C+closed-form+mod-class+deletion+greedy&descAlign=50&descAlignY=72&descFontColor=FFFFFF)
 
 <div align="center">
 
@@ -49,24 +49,27 @@ Three defects must be repaired: length outside $[6, 20]$, absent character class
 | **Replacement** | $6 \le n \le 20$ | $\max(\text{missing},\; \sum \lfloor L/3 \rfloor)$ |
 | **Deletion** | $n > 20$ | $(n - 20) + \max(\text{missing},\; \text{rep})$ |
 
+```text
+0        6                   20                  n
+├────────┼───────────────────┼───────────────────▶
+ insert   replace-only        delete + replace
+```
+
 ## 🧵 The Pipeline
 
 ```mermaid
-graph LR
-    P[password chars] --> W[run walk: i, j indices]
-    W --> H[head-only class flags]
-    H --> R[fold: rep, c0, c1]
-    R --> Q{length regime}
-    Q -- n < 6 --> I[max missing, 6 - n]
-    Q -- 6 .. 20 --> M[max missing, rep]
-    Q -- n > 20 --> D[s1 then s2 then s3 clamps]
-    D --> A[n - 20 + max missing, rep]
-```
-
-```text
-a a a b b b
-└─ L=3 ── L=3 ─
-rep += 1   rep += 1          residue 0 → c0 += 1 on each run
+flowchart TD
+    A[run walk: i, j indices] --> B{run length L >= 3?}
+    B -- yes --> C[rep += L / 3<br/>c0 or c1 by L mod 3]
+    B -- no --> D[skip run]
+    C --> E{length regime}
+    D --> E
+    E -- n < 6 --> F[return Math.max missing, 6 - n]
+    E -- 6 <= n <= 20 --> G[return Math.max missing, rep]
+    E -- n > 20 --> H[s1 = Math.min c0, del]
+    H --> I2[s2 = Math.min c1, del / 2]
+    I2 --> J[s3 = Math.min del / 3, rep]
+    J --> K[return n - 20 + Math.max missing, rep]
 ```
 
 ## 💸 The Mod-Class Market
@@ -91,10 +94,6 @@ For $n > 20$, exactly $n - 20$ deletions are mandatory. A deletion matters only 
 
 The greedy is closed form. When the mod-2 phase is active, the remaining budget is at least 3, which implies the mod-0 and mod-1 phases ran to completion, hence every live run is congruent to $2 \bmod 3$, and concentration across runs is exact: the total mod-2 cancellation is $\min(\lfloor \text{budget}/3 \rfloor, \text{remaining bill})$.
 
-<div align="center">
-<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="280" alt="typing hands sticker">
-</div>
-
 ## ⚙️ Mechanism
 
 * `kernel` walks maximal runs with indices `i` and `j`; class flags `low`, `up`, `dig` are set from the run head only, which is complete because every character is a run head exactly once.
@@ -111,7 +110,7 @@ Spend map conserves the deletion budget: 🟪 one deletion per mod-0 cancellatio
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
 | 21 identical | L=21 | 7 | 1 | 0 | 1 | 1 | 0 | 0 | 🟪 | **7** |
 | 25 identical | L=25 | 8 | 0 | 1 | 5 | 0 | 1 | 1 | 🟧🟥🟥 | **11** |
-| 27 identical | L=27 | 9 | 1 | 0 | 7 | 1 | 0 | 2 | 🟪🟥🟥🟥 | **13** |
+| 27 identical | L=27 | 9 | 1 | 0 | 7 | 1 | 0 | 2 | 🟪🟥🟥🟥🟥 | **13** |
 | `"aaa111"` | 3,3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | — | **2** |
 | `"a"` | none | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | **5** |
 | `"aA1"` | none | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | **3** |
@@ -206,4 +205,4 @@ public class Solution {
 
 </div>
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:F57F17,100:6A1B9A&height=120&section=footer&animation=fadeIn)
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:F89820,100:5382A1&height=120&section=footer&animation=fadeIn)
