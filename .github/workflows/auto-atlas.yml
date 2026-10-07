@@ -1,0 +1,132 @@
+name: auto-atlas
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+      - '.github/**'
+  workflow_dispatch:
+
+concurrency:
+  group: auto-atlas
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Regenerate tree and live vault blocks
+        run: |
+          python3 - <<'PY'
+          import os, re
+
+          EXT = {
+              '.rkt': '🟪', '.c': '⚪', '.h': '⚪', '.java': '🟠',
+              '.js': '🟡', '.py': '🔵', '.md': '📖', '.yml': '⚙️',
+              '.yaml': '⚙️', '.json': '🧾', '.txt': '📄',
+          }
+          LANGS = [('.rkt', '🟪'), ('.c', '⚪'), ('.java', '🟠'),
+                   ('.js', '🟡'), ('.py', '🔵')]
+          CODE = {e for e, _ in LANGS}
+          SMALL = {'ii': 'II', 'iii': 'III', 'iv': 'IV'}
+          T_START = '<!-- AUTO-TREE:START -->'
+          T_END = '<!-- AUTO-TREE:END -->'
+          L_START = '<!-- AUTO-LEDGER:START -->'
+          L_END = '<!-- AUTO-LEDGER:END -->'
+
+          def icon(name):
+              if name == 'LICENSE':
+                  return '⚖️'
+              return EXT.get(os.path.splitext(name)[1].lower(), '📄')
+
+          lines = []
+          state = {'files': 0, 'dirs': 0}
+
+          def walk(path, prefix):
+              names = [n for n in os.listdir(path) if n != '.git']
+              names.sort(key=lambda n: (not os.path.isdir(os.path.join(path, n)), n.lower()))
+              for i, name in enumerate(names):
+                  full = os.path.join(path, name)
+                  last = i == len(names) - 1
+                  branch = '└── ' if last else '├── '
+                  if os.path.isdir(full):
+                      state['dirs'] += 1
+                      lines.append(prefix + branch + '📁 ' + name + '/')
+                      walk(full, prefix + ('    ' if last else '│   '))
+                  else:
+                      state['files'] += 1
+                      lines.append(prefix + branch + icon(name) + ' ' + name)
+
+          repo = os.environ.get('GITHUB_REPOSITORY', 'repo').split('/')[-1]
+          walk('.', '')
+          tree = T_START + '\n```text\n📦 ' + repo + '/\n' + '\n'.join(lines) + '\n```\n\n📊 ' + \
+                 str(state['files']) + ' files · ' + str(state['dirs']) + ' folders\n' + T_END
+
+          found = []
+          for root, dirs, files in os.walk('.'):
+              dirs[:] = [d for d in dirs if d != '.git']
+              base = os.path.basename(root)
+              if re.match(r'^\d+-', base):
+                  found.append(os.path.relpath(root, '.'))
+          kept = []
+          for rel in sorted(found):
+              if not any(rel != k and rel.startswith(k + os.sep) for k in found):
+                  kept.append(rel)
+          entries = []
+          total_files = 0
+          for rel in kept:
+              base = os.path.basename(rel)
+              parts = base.split('-')
+              num = parts[0]
+              title = ' '.join(SMALL.get(w, w.capitalize()) for w in parts[1:])
+              exts = set()
+              count = 0
+              for r2, d2, f2 in os.walk(rel):
+                  for f in f2:
+                      count += 1
+                      e = os.path.splitext(f)[1].lower()
+                      if e in CODE:
+                          exts.add(e)
+              total_files += count
+              meter = ''.join(g if e in exts else '⬜' for e, g in LANGS)
+              entries.append('- [x] **' + num + ' · ' + title + '** · ' + meter +
+                             ' · ' + str(count) + ' files · [dossier](' +
+                             rel.replace(os.sep, '/') + ')')
+          ledger = L_START + '\n' + '\n'.join(entries) + '\n\n📊 ' + \
+                   str(len(entries)) + ' problems · ' + str(total_files) + ' files inside dossiers\n' + L_END
+
+          with open('README.md', 'r', encoding='utf-8') as fh:
+              content = fh.read()
+          for start, end, block in ((T_START, T_END, tree), (L_START, L_END, ledger)):
+              pattern = re.compile(re.escape(start) + '.*?' + re.escape(end), re.S)
+              if pattern.search(content):
+                  content = pattern.sub(lambda m, b=block: b, content, count=1)
+              else:
+                  content = content.rstrip() + '\n\n' + block + '\n'
+          with open('README.md', 'w', encoding='utf-8') as fh:
+              fh.write(content)
+          print('tree lines:', len(lines), '| vault entries:', len(entries))
+          PY
+
+      - name: Commit regenerated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README already up to date"
+          else
+            git commit -m "chore: regenerate atlas, tree and live vault [auto-atlas]"
+            git push
+          fi
