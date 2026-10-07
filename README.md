@@ -86,6 +86,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 ├── 📁 Problem/
 │   ├── 📁 2035. Partition Array Into Two Arrays to Minimize Sum Difference/
 │   │   └── 📁 c/
+│   │       ├── 📖 README.md
 │   │       └── ⚪ solution.c
 │   ├── 📁 2299-strong-password-checker-II/
 │   │   └── 📁 c/
@@ -111,7 +112,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 └── 📖 README.md
 ```
 
-📊 16 files · 13 folders
+📊 17 files · 13 folders
 <!-- AUTO-TREE:END -->
 
 ## 📒 The Live Vault
