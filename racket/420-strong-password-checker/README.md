@@ -2,16 +2,32 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=1400&pause=500&color=8E24AA&center=true&vCenter=true&width=560&lines=420.+Strong+Password+Checker;Racket+%7C+0+ms+%7C+Beats+100.00%25;One+scan+%7C+nine+scalars+%7C+zero+allocation" alt="animated typing title">
+| 🧪 Testcases | ⏱️ Runtime | 🚀 Beats |  Memory |  Source lines |
+| :---: | :---: | :---: | :---: | :---: |
+| **54 / 54** | **0 ms** | **100.00 %** | **102 MB** | **42** |
 
-![Language](https://img.shields.io/badge/Language-Racket-8E24AA?style=for-the-badge&logo=racket&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Accepted-00C853?style=for-the-badge&logo=leetcode&logoColor=white)
-![Difficulty](https://img.shields.io/badge/Difficulty-Hard-C73E3E?style=for-the-badge)
-![Testcases](https://img.shields.io/badge/Testcases-54%2F54%20passed-success?style=for-the-badge)
+</div>
 
-<img src="https://progress-bar.dev/100/?title=Runtime%20beats&width=240&color=8E24AA" alt="runtime beats bar"> <img src="https://progress-bar.dev/100/?title=Memory%20beats&width=240&color=FFA116" alt="memory beats bar">
+<table align="center">
+<tr>
+<td align="center">
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="320" alt="typing cat sticker">
+</td>
+<td align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=1400&pause=500&color=8E24AA&center=true&vCenter=true&width=420&lines=Racket+%7C+0+ms+%7C+Beats+100.00%25;One+scan,+nine+scalars,+zero+allocation;Driver-exact+kebab-case+binding" alt="animated typing title">
+<br>
+<img src="https://img.shields.io/badge/Language-Racket-8E24AA?style=for-the-badge&logo=racket&logoColor=white" alt="language badge">
+<br>
+<img src="https://img.shields.io/badge/Status-Accepted-00C853?style=for-the-badge&logo=leetcode&logoColor=white" alt="status badge">
+<br>
+<img src="https://img.shields.io/badge/Difficulty-Hard-C73E3E?style=for-the-badge" alt="difficulty badge">
+<br>
+<img src="https://img.shields.io/badge/Testcases-54%2F54%20passed-success?style=for-the-badge" alt="testcases badge">
+</td>
+</tr>
+</table>
 
-<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="360" alt="typing cat sticker">
+<div align="center">
 
 **[📐 Fact](#-the-structural-fact) · [💸 Market](#-the-mod-class-market) · [🧵 Pipeline](#-the-pipeline) · [⚙️ Mechanism](#-mechanism) · [🧾 Traces](#-witness-traces) · [💻 Source](#-accepted-source) · [🛡️ Notes](#-engineering-notes) · [📊 Complexity](#-complexity)**
 
@@ -25,6 +41,7 @@
 > The previous build shipped camelCase and snake_case aliases under the no-evidence fallback; this report is R1-priority evidence and overrides that fallback.
 > The correction is exactly one binding: the public entry is now defined as `strong-password-checker`, delegating to the private kernel.
 > The kernel, the fold helper, every accumulator, and every arithmetic relation are byte-identical to the previously accepted logic; no relation was rewritten to fix a binding fault.
+> Render audit: the progress-bar.dev embeds returned broken images under the GitHub proxy and are removed from this build; every remaining visual asset is served by a renderer verified to display on GitHub.
 
 > [!IMPORTANT]
 > **Permanent registry lesson:** A Racket driver binds kebab-case symbols, and an unbound-identifier report naming a symbol is driver-level binding evidence of the same rank as a visible driver line.
@@ -80,8 +97,8 @@ For $n > 20$, exactly $n - 20$ deletions are mandatory. A deletion matters only 
 | Residue | Price in deletions | Cancellation | Buy order | Price map |
 | :---: | :---: | :---: | :---: | :--- |
 | **Mod 0** | 1 | 1 replacement | 1st, cheapest | 🟥 |
-| **Mod 1** | 2 | 1 replacement | 2nd | 🟥🟥 |
-| **Mod 2** | 3 | 1 replacement | 3rd, closed form | 🟥🟥🟥 |
+| **Mod 1** | 2 | 1 replacement | 2nd | 🟥 |
+| **Mod 2** | 3 | 1 replacement | 3rd, closed form | 🟥🟥 |
 
 > *Buying cancellations in ascending price order is optimal by exchange:* any purchase at a higher price while a cheaper one remains can be swapped without loss.
 
@@ -117,7 +134,7 @@ Spend map conserves the deletion budget: 🟪 one deletion per mod-0 cancellatio
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- | :---: |
 | 21 identical | L=21 | 7 | 1 | 0 | 1 | 1 | 0 | 0 | 🟪 | **7** |
 | 25 identical | L=25 | 8 | 0 | 1 | 5 | 0 | 1 | 1 | 🟧🟥🟥 | **11** |
-| 27 identical | L=27 | 9 | 1 | 0 | 7 | 1 | 0 | 2 | 🟪🟥🟥🟥🟥🟥 | **13** |
+| 27 identical | L=27 | 9 | 1 | 0 | 7 | 1 | 0 | 2 | 🟪🟥🟥🟥🟥 | **13** |
 | `"aaa111"` | 3,3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | — | **2** |
 | `"a"` | none | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | **5** |
 | `"aA1"` | none | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — | **3** |
@@ -179,16 +196,15 @@ Spend map conserves the deletion budget: 🟪 one deletion per mod-0 cancellatio
 > [!NOTE]
 > **Binding closure:** every free symbol is a Racket base export (`string-length`, `string-ref`, `char?`, `char=?`, `char-lower-case?`, `char-upper-case?`, `char-numeric?`, `modulo`, `quotient`, `min`, `max`, `values`, `let-values`), and the single public symbol matches the driver byte for byte, so the unbound-identifier class is empty.
 
-> [!TIP]
-> **Compilation context:** the file stays definition-only, no `#lang`, no `provide`, no `module+`, because the harness joins sources into `prog_joined.rkt` and supplies the module context; the joined-line offset in the report confirms the wrapping contract.
-
 > [!WARNING]
 > **Sentinel safety:** `cur` begins as `#f` and the equality test is guarded by `(char? cur)`, so iteration zero cannot raise a contract violation.
 
+* **Compilation context:** the file stays definition-only, no `#lang`, no `provide`, no `module+`, because the harness joins sources into `prog_joined.rkt` and supplies the module context; the joined-line offset in the report confirms the wrapping contract.
 * **Stack and allocation:** `loop` and both `let-values` continuations are tail positions evaluated in constant stack; the scan allocates no pair, vector, or box.
-* **Phase-entry invariant:** `s3` is exact because `del2 >= 3` forces `c0` and `c1` to be fully purchased, making every live run congruent to $2 \bmod 3$ with capacity $\lfloor (L-2)/3 \rfloor = \lfloor L/3 \rfloor$; the cap $\min(\lfloor \text{del2}/3 \rfloor, \text{rep4})$ closes the over-budget case.
+* **Phase-entry invariant:** `s3` is exact because `del2 >= 3` forces `c0` and `c1` to be fully purchased, making every live run congruent to $2 \bmod 3$ with capacity $\lfloor (L-2)/3 \rfloor = \lfloor L/3 \rfloor$; the cap $\min(\lfloor \text{del2}/3 \rfloor, \text{rep4})` closes the over-budget case.
 * **Boundary strictness:** divisors 1, 2, 3 in `s1`, `s2`, `s3` are the exact prices; relaxing a divisor wastes budget, tightening it forfeits a cancellation. Witnesses 21, 25, 27 identical characters return 7, 11, 13 and discriminate all three prices.
 * **Overflow:** exact Racket integers bounded by $n$ and $\lfloor n/3 \rfloor$ remove overflow from the failure catalogue.
+* **Asset integrity:** every embedded visual is served by a renderer confirmed live on GitHub; the broken progress-bar embeds from the prior build are deleted, and no flaky rate-limited card service remains.
 * **Performance honesty:** one read per character plus constant closing arithmetic meets the read-once lower bound; millisecond labels remain properties of the judge harness.
 
 ## 📊 Complexity
@@ -204,9 +220,7 @@ Spend map conserves the deletion budget: 🟪 one deletion per mod-0 cancellatio
 
 ![Accepted](https://img.shields.io/badge/Accepted-54%2F54%20testcases-00C853?style=for-the-badge&logo=leetcode&logoColor=white)
 
-[![repo card](https://github-readme-stats.vercel.app/api/pin/?username=taro902&repo=Leetcode-Solution&theme=midnight-purple&show_owner=true)](https://github.com/taro902/Leetcode-Solution)
-
-*Built under the SUPER GENIUS HUMAN CODER registry: R1 binding from evidence, R2 proof-carrying pruning, R9 single kernel multi-alias.*
+*Built under Tar0 registry: R1 binding from evidence, R2 proof-carrying pruning, R9 single kernel multi-alias.*
 
 </div>
 
