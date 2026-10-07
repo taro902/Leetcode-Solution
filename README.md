@@ -79,16 +79,31 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 <!-- AUTO-TREE:START -->
 ```text
 📦 Leetcode-Solution/
-├──  .github/
-│   ── 📁 workflows/
+├── 📁 .github/
+│   └── 📁 workflows/
 │       └── ⚙️ auto-tree.yml
-├──  Problem/
-│   └── 📁 420-strong-password-checker/
+├── 📁 Problem/
+│   └── 📁 420-strong-password-checker /
+│       ├── 📁 c/
+│       │   ├── 📖 README.md
+│       │   └── ⚪ solution.c
+│       ├── 📁 Java/
+│       │   ├── 📖 README.md
+│       │   └── 🟠 solution.java
+│       ├── 📁 JavaScript/
+│       │   ├── 📖 README.md
+│       │   └── 🟡 solution.js
+│       ├── 📁 python3/
+│       │   ├── 📖 README.md
+│       │   └── 🔵 solution.py
+│       └── 📁 racket/
+│           ├── 📖 README.md
+│           └── 🟪 solution.rkt
 ├── ⚖️ LICENSE
-└──  README.md
+└── 📖 README.md
 ```
 
- mirror of the last commit
+📊 13 files · 9 folders · 5 solution languages
 <!-- AUTO-TREE:END -->
 
 ## 🌐 Language Spectrum
