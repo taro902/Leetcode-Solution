@@ -89,6 +89,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 │   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   └── 📁 java/
+│   │       ├── 📖 README.md
 │   │       └── 🟠 solution.java
 │   ├── 📁 2299-strong-password-checker-II/
 │   │   └── 📁 c/
@@ -114,7 +115,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 └── 📖 README.md
 ```
 
-📊 18 files · 14 folders
+📊 19 files · 14 folders
 <!-- AUTO-TREE:END -->
 
 ## 📒 The Live Vault
