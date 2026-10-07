@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="340" alt="sticker slot A"/>
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyY255enRoMGd6bmxjN3JjM2lhNHdoeDdxYXpqZjYxYnlvcm10ZGZpaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vKciysPc5EAKmmyfEN/giphy.gif" width="340" alt="sticker slot A"/>
 </p>
 
 <p align="center">
