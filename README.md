@@ -85,6 +85,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 ├── 📁 Problem/
 │   ├── 📁 2299-strong-password-checker-II/
 │   │   └── 📁 c/
+│   │       ├── 📖 README.md
 │   │       └── ⚪ solution.c
 │   └── 📁 420-strong-password-checker /
 │       ├── 📁 c/
@@ -106,7 +107,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 └── 📖 README.md
 ```
 
-📊 14 files · 11 folders · 5 solution languages
+📊 15 files · 11 folders · 5 solution languages
 <!-- AUTO-TREE:END -->
 
 ## 🌐 Language Spectrum
