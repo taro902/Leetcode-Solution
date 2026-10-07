@@ -48,10 +48,10 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 ```text
 📦 Leetcode-Solution/
 ├── 📁 .github/
-│   └──  workflows/
+│   └── 📁 workflows/
 │       └── ⚙️ auto-atlas.yml
-├──  Problem/
-│   ├──  2035. Partition Array Into Two Arrays to Minimize Sum Difference/
+├── 📁 Problem/
+│   ├── 📁 2035. Partition Array Into Two Arrays to Minimize Sum Difference/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
@@ -60,7 +60,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   │   └── 🟠 solution.java
 │   │   ├── 📁 javascript/
 │   │   │   ├── 📖 README.md
-│   │   │   └──  solution.js
+│   │   │   └── 🟡 solution.js
 │   │   └── 📁 python/
 │   │       ├── 📖 README.md
 │   │       └── 🔵 solution.py
@@ -68,17 +68,17 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 c/
 │   │       ├── 📖 README.md
 │   │       └── ⚪ solution.c
-│   └──  420-strong-password-checker/
+│   └── 📁 420-strong-password-checker /
 │       ├── 📁 c/
 │       │   ├── 📖 README.md
-│       │   └──  solution.c
+│       │   └── ⚪ solution.c
 │       ├── 📁 Java/
 │       │   ├── 📖 README.md
 │       │   └── 🟠 solution.java
 │       ├── 📁 JavaScript/
 │       │   ├── 📖 README.md
-│       │   └──  solution.js
-│       ├──  python3/
+│       │   └── 🟡 solution.js
+│       ├── 📁 python3/
 │       │   ├── 📖 README.md
 │       │   └── 🔵 solution.py
 │       └── 📁 racket/
@@ -88,7 +88,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 └── 📖 README.md
 ```
 
-📊 22 files · 16 folders
+📊 23 files · 16 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -98,9 +98,9 @@ One line per problem. The checkbox ticks the moment a dossier folder exists; the
 Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python · ⬜ not yet
 
 <!-- AUTO-LEDGER:START -->
-- [x] **420 · Strong Password Checker** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker)
-- [x] **2035 · Partition Array Into Two Arrays to Minimize Sum Difference** · ⬜🟠🟡 · 8 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
-- [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
+- [x] **420 · Strong Password Checker** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker%20)
+- [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · ⬜⚪🟠🟡🔵 · 8 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
+- [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
 
 📊 3 problems · 20 files inside dossiers
 <!-- AUTO-LEDGER:END -->
