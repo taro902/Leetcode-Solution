@@ -17,8 +17,25 @@
   <img src="https://img.shields.io/badge/Proof-Oct%2007%2C%202026-444444?style=flat-square" alt="proof"/>
 </p>
 
+<!-- 🎬 STICKER SLOT A · ganti nilai src di bawah dengan salah satu link catatan:
+     https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif
+     https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif
+     https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif
+     https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif
+     https://media.giphy.com/media/26n6WywJyh39n9pBu/giphy.gif
+     https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif
+     https://media.giphy.com/media/26BRBKzUi8g3uO7uw/giphy.gif
+-->
 <p align="center">
-  <img src="https://i.ibb.co.com/C5FWDmwV/Screenshot-20261007-200053-Chrome.png" width="340" alt="sticker slot A"/>
+  <img src="https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" width="340" alt="sticker slot A"/>
+</p>
+
+<p align="center">
+  <a href="https://i.ibb.co.com/C5FWDmwV/Screenshot-20261007-200053-Chrome.png">
+    <img src="https://i.ibb.co.com/C5FWDmwV/Screenshot-20261007-200053-Chrome.png" width="72%" alt="judge panel, Oct 07 2026 19:25"/>
+  </a>
+  <br/>
+  <sub>the judge panel for this folder's Racket build, verbatim · click for full resolution</sub>
 </p>
 
 ---
@@ -40,17 +57,20 @@
 
 ## The receipt
 
-Numbers first, prose second. Each row is a judge screenshot filed in the repo ledger; nothing here is a projection.
+Numbers first, prose second. Every measurement cell in this table is a value read off a judge panel and filed in the repo ledger; build identity lives in the lane cell, never inside a measurement column. One row per receipted vertex, this problem, all five lanes.
 
 | Lane | Verdict | Cases | Runtime | Beat | Memory | Beat | Proof |
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | 🟪 Racket — this folder | Accepted | 201/201 | 339 ms | 100.00% | 134.47 MB | 100.00% | screenshot, Oct 07 2026 19:25 |
-| ⚪ C | Accepted | 201/201 | 171 ms | 100.00% | radix + two-pointer build | — | screenshot |
-| 🟠 Java | Accepted | 201/201 | 197 ms | 100.00% | static flat buffers | — | screenshot |
-| 🟡 Python | Accepted | 201/201 | 235 ms | 100.00% | numpy dual-path | — | screenshot |
-| 🔵 JavaScript | Accepted | 201/201 | 201 ms | 100.00% | typed arrays | — | screenshot |
+| ⚪ C — radix-LSD vertex | Accepted | 201/201 | 175 ms | 100.00% | 9.37 MB | 100.00% | screenshot, Oct 07 2026 20:52 |
+| 🟠 Java — static arena + staircase | Accepted | 201/201 | 172 ms | 99.88% | 45.30 MB | 100.00% | screenshot, Oct 07 2026 22:20 |
+| 🟡 Python3 — pure sweep (live) | Accepted | 201/201 | 962 ms | 98.31% | 20.23 MB | 98.07% | screenshot, Oct 07 2026 20:30 |
+| 🟡 Python3 — numpy path (archived) | Accepted | 201/201 | 227 ms | 99.76% | 32.94 MB | 7.49% | screenshot, Oct 07 2026 20:09 |
+| 🔵 JavaScript — static arena | Accepted | 201/201 | 148 ms | 100.00% | 54.72 MB | 100.00% | screenshot, Oct 07 2026 21:33 |
 
-The Racket row used to read 1095 ms. The rebuild in this folder cut it to 339 ms without touching the mathematics, purely by deleting allocation: the old engine built lists per combination and consed them into buckets; the new one writes fixnums into pre-sized vectors and never asks the garbage collector for anything.
+Superseded ancestors stay filed in their own lane dossiers and are named here so the table cannot be misread as cherry-picking: C at 171 ms before the radix sort phase, Java at 197 ms before the staircase walk, JavaScript at 201 ms before the static arena, Python3 at 235 ms in the numpy dual-path era. The Python3 lane keeps two rows on purpose: its two vertices trade axes — the numpy build buys runtime and pays residency, the pure sweep does the reverse — so neither dominates and both remain listed. Every other lane shows its dominating vertex.
+
+The Racket row used to read 1095 ms. The rebuild in this folder cut it to 339 ms without touching the mathematics, purely by deleting allocation: the old engine built lists per combination and consed them into buckets; the new one writes fixnums into pre-sized vectors and never asks the garbage collector for anything. The 134.47 MB beside it is the Racket runtime's whole-process residency, which is why it dwarfs the C row's 9.37 MB while both sit at 100.00% of their own distributions.
 
 ---
 
@@ -179,6 +199,7 @@ Two honesty notes, because inflated claims age badly. The 134.47 MB on the badge
 4. **`best` escaping as `+inf.0`.** Impossible: the `k = 0` iteration always runs with `sL = 0` against a non-empty right bucket, so `best` holds an exact integer before `exact-round` sees it.
 5. **GC churn.** Removed at the source: no lists, no conses, no intermediate strings; storage is flat vectors allocated once at proven sizes.
 6. **Duplicate logic.** None: one private kernel, two public entry bindings that delegate in a single expression each.
+7. **Receipt drift.** Closed by process: this table is rewritten whenever any lane files a new screenshot, measurement columns accept numbers only, and superseded vertices are named in prose rather than deleted.
 
 ---
 
@@ -275,7 +296,8 @@ Two honesty notes, because inflated claims age badly. The 134.47 MB on the badge
 - One kernel, many entry bindings; duplication is a defect, not a style choice.
 - Sanitizers and the judge harness outrank opinion, including mine.
 - Performance labels are harness properties; the guarantee this repo makes is strictly minimal work per testcase.
-- Visual assets ship only if they render clean on GitHub; boxy ribbons and broken bars stay out of this dossier.
+- Receipt tables carry numbers only in measurement columns; build identity and history live in the lane cell and the prose beneath it.
+- Visual assets ship only if they render clean on GitHub; boxy ribbons, broken bars, and mislabeled evidence embeds stay out of this dossier.
 
 ---
 
@@ -289,7 +311,7 @@ Two honesty notes, because inflated claims age badly. The 134.47 MB on the badge
      https://media.giphy.com/media/26BRBKzUi8g3uO7uw/giphy.gif
 -->
 <p align="center">
-  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="300" alt="sticker slot B"/>
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" alt="sticker slot B"/>
 </p>
 
 <p align="center">
