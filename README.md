@@ -92,6 +92,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 │   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   └── 📁 python/
 │   │       ├── 📖 README.md
@@ -120,7 +121,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 └── 📖 README.md
 ```
 
-📊 22 files · 16 folders
+📊 23 files · 16 folders
 <!-- AUTO-TREE:END -->
 
 ## 📒 The Live Vault
