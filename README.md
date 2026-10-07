@@ -81,7 +81,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 📦 Leetcode-Solution/
 ├── 📁 .github/
 │   └── 📁 workflows/
-│       └── ⚙️ auto-tree.yml
+│       └── ⚙️ auto-atlas.yml
 ├── 📁 Problem/
 │   ├── 📁 2299-strong-password-checker-II/
 │   │   └── 📁 c/
@@ -107,7 +107,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 └── 📖 README.md
 ```
 
-📊 15 files · 11 folders · 5 solution languages
+📊 15 files · 11 folders
 <!-- AUTO-TREE:END -->
 
 ## 🌐 Language Spectrum
@@ -246,3 +246,10 @@ Every dossier closes with this table shape. The root keeps the repo-level record
 </div>
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:D81B60,100:1E88E5&height=130&section=footer&animation=fadeIn)
+
+<!-- AUTO-LEDGER:START -->
+- [x] **2299 · Strong Password Checker Ii** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
+- [x] **420 · Strong Password Checker ** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker )
+
+📊 2 problems · 12 files inside dossiers
+<!-- AUTO-LEDGER:END -->
