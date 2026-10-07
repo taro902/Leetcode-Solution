@@ -1,165 +1,157 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:263238,100:00E676&height=190&section=header&text=2035.+Partition+Into+Two+Arrays&fontSize=34&fontColor=FFFFFF&fontAlign=50&fontAlignY=55&animation=fadeIn&desc=C+%7C+radix+LSD+buckets+%2B+monotone+staircase&descAlign=50&descAlignY=72&descFontColor=FFFFFF)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:B71C1C,100:FF6F00&height=190&section=header&text=2035.+Partition+Into+Two+Arrays&fontSize=34&fontColor=FFFFFF&fontAlign=50&fontAlignY=55&animation=fadeIn&desc=Java+%7C+fused+recurrence%2Bbucketing+on+static+flat+buffers&descAlign=50&descAlignY=72&descFontColor=FFFFFF)
 
 <div align="center">
 
-| 🧪 Testcases | ⏱️ Runtime | 🚀 Beats | 🧠 Memory |  Heap |
+| 🧪 Testcases | ⏱️ Runtime | 🚀 Beats | 🧠 Memory |  Alloc per call |
 | :---: | :---: | :---: | :---: | :---: |
-| **201 / 201** | **171 ms** | **100.00 %** | **9.34 MB** | **zero** |
+| **201 / 201** | **197 ms** | **99.40 %** | **45.97 MB** | **zero** |
 
-<img src="https://private-user-images.githubusercontent.com/74038190/240816295-e8d30426-b3c1-4ae9-9bf1-15880afd93fd.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTEzNjQwNjgsIm5iZiI6MTc5MTM2Mzc2OCwicGF0aCI6Ii83NDAzODE5MC8yNDA4MTYyOTUtZThkMzA0MjYtYjNjMS00YWU5LTliZjEtMTU4ODBhZmQ5M2ZkLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDA3VDA5MDI0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1NDY0NmI3ZTBmYzJlNzkwYjZmNTEzNzE2NmZkYWU3YWM4OGMwMDY2OGE1Y2Y2YzI2YmI0ZmEyZWQ5OGNhYjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmdpZiJ9.Aao7QWjVC7Unwe3FPeaoJ6tqGe2IAa06JETl93sGAPQ" width="340" alt="banner">
+<img src="https://media.giphy.com/media/26FPy3QZQqGtDcrja/giphy.gif" width="340" alt="banner">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=1400&pause=500&color=00E676&center=true&vCenter=true&width=440&lines=C+%7C+171+ms+%7C+beats+100.00%25;Three+radix+passes,+zero+comparator+calls;Staircase+walks+every+bucket+pair" alt="animated typing title">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=1400&pause=500&color=FF6F00&center=true&vCenter=true&width=440&lines=Java+%7C+197+ms+%7C+memory+beats+100.00%25;One+fused+pass,+flat+buckets,+int+staircase;Static+buffers+outlive+every+testcase" alt="animated typing title">
 
-![Language](https://img.shields.io/badge/Language-C-A8B9CC?style=flat&logo=c&logoColor=white) ![Status](https://img.shields.io/badge/Status-Accepted-00C853?style=flat&logo=leetcode&logoColor=white) ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-C73E3E?style=flat) ![Sort](https://img.shields.io/badge/Sort-LSD%20radix%203%20passes-00E676?style=flat)
+![Language](https://img.shields.io/badge/Java-B07219?style=flat&logo=openjdk&logoColor=white) ![Status](https://img.shields.io/badge/Status-Accepted-00C853?style=flat&logo=leetcode&logoColor=white) ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-C73E3E?style=flat) ![Buffers](https://img.shields.io/badge/Buffers-static%20flat-FF6F00?style=flat)
 
 </div>
 
 <div align="center">
 
-**[📐 Fact](#-the-structural-fact) · [⚙️ Foundry](#-the-radix-foundry) · [🧵 Pipeline](#-the-pipeline) · [🔬 Mechanism](#-mechanism) · [🧾 Traces](#-witness-traces) · [💻 Source](#-source) · [🛡️ Notes](#-engineering-notes) · [📊 Complexity](#-complexity)**
+**[📐 Fact](#-the-structural-fact) · [🧱 Layout](#-the-flat-layout) · [🧵 Pipeline](#-the-pipeline) · [🔬 Mechanism](#-mechanism) · [🧾 Traces](#-witness-traces) · [💻 Source](#-source) · [🛡️ Notes](#-engineering-notes) · [📊 Complexity](#-complexity)**
 
 </div>
 
 > [!NOTE]
-> **Judge record:** Accepted 201 / 201, runtime 171 ms, beats 100.00 %, memory 9.34 MB, beats 100.00 %. The labels belong to the harness; the build guarantees the meet-in-the-middle floor with zero heap traffic.
+> **Judge record:** Accepted 201 / 201, runtime 197 ms, beats 99.40 %, memory 45.97 MB, beats 100.00 %.
 
-> [!IMPORTANT]
-> **Binding stance:** no C driver line observed; R1 fallback in force: one static kernel plus camelCase `minimumDifference` and snake_case `minimum_difference`, zero logic duplication.
+> [!CAUTION]
+> **Forensic record, cursor split:** the first fused build let one cursor array serve both B0 and B1; the witness [-36,36] then paired a real value with a stale static zero and answered 0 instead of 72. The fix is exactly two cursor arrays, F0 and F1; no other relation moved.
 
 ## 📐 The Structural Fact
 
-A partition into two length-n arrays is a signing of the 2n elements with n plus and n minus signs; the objective is the absolute signed sum D. Halves report (k, d): plus count and signed sum. D = d1 + d2 under k1 + k2 = n, and the signing-to-tuple map is a bijection onto bucket pairs, so the bucketed minimum is the global minimum. For fixed k1, y -> |x + y| is V-shaped over sorted B, and the staircase walk (record, then move the pointer on the dominating side) is exact because every discarded pair is dominated by a value already banked.
+Signing bijection as always: n plus and n minus signs, objective |D|. Halves report (k, d); D = d1 + d2 under k1 + k2 = n; the bucket-pair union is the whole solution space. The staircase over sorted buckets is exact because each move discards only pairs dominated by the value just banked.
+
+## 🧱 The Flat Layout
 
 ```text
-nums:   [  2 | -1 |  0 |  4 | -2 | -9 ]
-signs:     +    -    -    +    -    +
-A = { 2, 4, -9 }  sum -3     B = { -1, 0, -2 }  sum -3     |D| = 0
-```
-
-## ⚙️ The Radix Foundry
-
-Comparison sorting is replaced by three least-significant-digit passes over an offset domain; no comparator function is ever called.
-
-```text
-value v, |v| <= 1.5e8   →   v + 150000000 ∈ [0, 3e8) ⊂ [0, 2^29)
-pass 0 · bits  0.. 9 · histogram 1024 bins · stable scatter into rt_tmp
-pass 1 · bits 10..19 · histogram 1024 bins · stable scatter back
-pass 2 · bits 20..29 · histogram 1024 bins · bucket order final
+B0 (static int[2^15])
+[ bucket k=0 | bucket k=1 | ... | bucket k=n ]
+^OFF[0]      ^OFF[1]             ^OFF[n+1]
+F0 cursors walk segments once; no matrix objects, no per-call alloc
 ```
 
 ## 🧵 The Pipeline
 
 ```mermaid
 flowchart TD
-    M[masks 0..2^n] --> R[low-bit recurrence d += 2*a i]
-    R --> K[bucket by popcount into b0, b1]
-    K --> X[radix_bucket: 3 LSD passes per bucket]
-    X --> P[pair k1 with n - k1]
-    P --> S[staircase: record, then move dominating pointer]
-    S --> Z[best, zero exits via goto done]
-    classDef a fill:#263238,stroke:#00E676,color:#fff
-    classDef b fill:#00695C,stroke:#333,color:#fff
-    classDef c fill:#00E676,stroke:#333,color:#000
-    class M,R a
-    class K,X b
-    class P,S,Z c
+    M[masks 1..2^n] --> F[fused: recurrence + bucket write in one step]
+    F --> S[Arrays.sort on OFF ranges]
+    S --> P[pair k1 with n - k1]
+    P --> T[int staircase, branch-light abs]
+    T --> Z[best, zero returns immediately]
+    classDef a fill:#B71C1C,stroke:#333,color:#fff
+    classDef b fill:#FF6F00,stroke:#333,color:#000
+    classDef c fill:#263238,stroke:#333,color:#fff
+    class M a
+    class F,S b
+    class P,T,Z c
 ```
 
 ## 🔬 Mechanism
 
-* `radix_bucket` sorts one bucket with three 10-bit LSD passes using static `rt_tmp` and `rt_cnt`; prefix sums reproduce the bucket length exactly, so every scatter lands inside [0, n).
-* `d0`, `d1`, `b0`, `b1`, `off`, `comb`, `fill` are static BSS buffers; the kernel allocates nothing per call.
-* The low-bit recurrence `d[m] = d[m ^ low] + 2 * a[i]` with base `d[0] = -sum(half)` builds all signed half sums in one forward pass.
-* The staircase pairs `k1` with `n - k1`, records |A[i] + B[j]| before moving, and exits through `goto done` the instant best reaches zero.
-* `minimumDifference` and `minimum_difference` delegate to `k2035_kernel`.
+* Static final buffers D0, D1, B0, B1, OFF, COMB, F0, F1 live for the process lifetime; every testcase reuses them, so the hot path allocates nothing.
+* The fused loop computes v0, v1 from the low-bit recurrence and writes them straight into their buckets via F0 and F1, one memory pass per half.
+* `Arrays.sort(B0, OFF[k], OFF[k+1])` sorts ranges in the flat buffer; no ragged matrix exists.
+* The staircase runs in pure int: pair sums ≤ 6e8 fit int32, abs is a branch, best updates inline, zero returns at once.
+* `minimumDifference` and `minimum_difference` delegate to the private kernel.
 
 ## 🧾 Witness Traces
 
 | Input | n | Certifying event | Answer |
 | :--- | :---: | :--- | :---: |
-| `[3,9,7,3]` | 2 | staircase banks 2 at k1=1 | **2** |
-| `[-36,36]` | 1 | only signings exist, 72 banked | **72** |
-| `[2,-1,0,4,-2,-9]` | 3 | zero met, goto done fires | **0** |
+| `[3,9,7,3]` | 2 | staircase banks 2 | **2** |
+| `[-36,36]` | 1 | cursor-split regression guard, 72 banked | **72** |
+| `[2,-1,0,4,-2,-9]` | 3 | zero met, immediate return | **0** |
 | `[5,-5]` | 1 | single signing per side | **10** |
 
 ## 💻 Source
 
 <details>
-<summary><strong>🔓 Expand the accepted C source</strong></summary>
+<summary><strong>🔓 Expand the accepted Java source</strong></summary>
 
-```c
-static int rt_tmp[1 << 15];
-static int rt_cnt[1024];
+```java
+import java.util.Arrays;
 
-static void radix_bucket(int *a, int n) {
-    for (int shift = 0; shift < 30; shift += 10) {
-        for (int c = 0; c < 1024; c++) rt_cnt[c] = 0;
-        for (int i = 0; i < n; i++) rt_cnt[((a[i] + 150000000) >> shift) & 1023]++;
-        int sum = 0;
-        for (int c = 0; c < 1024; c++) {
-            int t = rt_cnt[c];
-            rt_cnt[c] = sum;
-            sum += t;
+public class Solution {
+    private static final int CAP = 1 << 15;
+    private static final int[] D0 = new int[CAP];
+    private static final int[] D1 = new int[CAP];
+    private static final int[] B0 = new int[CAP];
+    private static final int[] B1 = new int[CAP];
+    private static final int[] OFF = new int[17];
+    private static final int[] COMB = new int[17];
+    private static final int[] F0 = new int[17];
+    private static final int[] F1 = new int[17];
+
+    private int kernel(int[] nums) {
+        int n = nums.length >> 1;
+        int masks = 1 << n;
+        long sum0 = 0;
+        long sum1 = 0;
+        for (int i = 0; i < n; i++) sum0 += nums[i];
+        for (int i = n; i < nums.length; i++) sum1 += nums[i];
+        COMB[0] = 1;
+        for (int k = 1; k <= n; k++) COMB[k] = COMB[k - 1] * (n - k + 1) / k;
+        OFF[0] = 0;
+        for (int k = 0; k <= n; k++) OFF[k + 1] = OFF[k] + COMB[k];
+        System.arraycopy(OFF, 0, F0, 0, n + 1);
+        System.arraycopy(OFF, 0, F1, 0, n + 1);
+        D0[0] = (int) -sum0;
+        D1[0] = (int) -sum1;
+        B0[F0[0]++] = D0[0];
+        B1[F1[0]++] = D1[0];
+        for (int m = 1; m < masks; m++) {
+            int low = m & -m;
+            int i = Integer.numberOfTrailingZeros(low);
+            int pm = m ^ low;
+            int v0 = D0[pm] + 2 * nums[i];
+            int v1 = D1[pm] + 2 * nums[n + i];
+            D0[m] = v0;
+            D1[m] = v1;
+            int k = Integer.bitCount(m);
+            B0[F0[k]++] = v0;
+            B1[F1[k]++] = v1;
         }
-        for (int i = 0; i < n; i++) rt_tmp[rt_cnt[((a[i] + 150000000) >> shift) & 1023]++] = a[i];
-        for (int i = 0; i < n; i++) a[i] = rt_tmp[i];
-    }
-}
-
-static int k2035_kernel(int *nums, int numsSize) {
-    int n = numsSize >> 1;
-    int masks = 1 << n;
-    static int d0[1 << 15];
-    static int d1[1 << 15];
-    static int b0[1 << 15];
-    static int b1[1 << 15];
-    static int off[17];
-    static int comb[17];
-    static int fill[17];
-    long sum0 = 0;
-    long sum1 = 0;
-    for (int i = 0; i < n; i++) sum0 += nums[i];
-    for (int i = n; i < numsSize; i++) sum1 += nums[i];
-    d0[0] = (int)(-sum0);
-    d1[0] = (int)(-sum1);
-    comb[0] = 1;
-    for (int k = 1; k <= n; k++) comb[k] = comb[k - 1] * (n - k + 1) / k;
-    off[0] = 0;
-    for (int k = 0; k <= n; k++) off[k + 1] = off[k] + comb[k];
-    for (int k = 0; k <= n; k++) fill[k] = off[k];
-    for (int m = 0; m < masks; m++) b0[fill[__builtin_popcount(m)]++] = d0[m];
-    for (int k = 0; k <= n; k++) fill[k] = off[k];
-    for (int m = 0; m < masks; m++) b1[fill[__builtin_popcount(m)]++] = d1[m];
-    for (int k = 0; k <= n; k++) {
-        radix_bucket(b0 + off[k], comb[k]);
-        radix_bucket(b1 + off[k], comb[k]);
-    }
-    long best = 4000000000L;
-    for (int k1 = 0; k1 <= n; k1++) {
-        int *A = b0 + off[k1];
-        int na = comb[k1];
-        int *B = b1 + off[n - k1];
-        int j = comb[n - k1] - 1;
-        int i = 0;
-        while (i < na && j >= 0) {
-            long s = (long)A[i] + B[j];
-            long av = s < 0 ? -s : s;
-            if (av < best) best = av;
-            if (best == 0) goto done;
-            if (s < 0) i++;
-            else j--;
+        for (int k = 0; k <= n; k++) {
+            Arrays.sort(B0, OFF[k], OFF[k + 1]);
+            Arrays.sort(B1, OFF[k], OFF[k + 1]);
         }
+        int best = Integer.MAX_VALUE;
+        for (int k1 = 0; k1 <= n; k1++) {
+            int ia = OFF[k1];
+            int na = OFF[k1 + 1];
+            int lo2 = OFF[n - k1];
+            int jb = OFF[n - k1 + 1] - 1;
+            while (ia < na && jb >= lo2) {
+                int s = B0[ia] + B1[jb];
+                int av = s < 0 ? -s : s;
+                if (av < best) {
+                    best = av;
+                    if (best == 0) return 0;
+                }
+                if (s < 0) ia++;
+                else jb--;
+            }
+        }
+        return best;
     }
-done:
-    return (int)best;
-}
 
-int minimumDifference(int* nums, int numsSize) {
-    return k2035_kernel(nums, numsSize);
-}
+    public int minimumDifference(int[] nums) {
+        return kernel(nums);
+    }
 
-int minimum_difference(int* nums, int numsSize) {
-    return k2035_kernel(nums, numsSize);
+    public int minimum_difference(int[] nums) {
+        return kernel(nums);
+    }
 }
 ```
 
@@ -168,29 +160,28 @@ int minimum_difference(int* nums, int numsSize) {
 ## 🛡️ Engineering Notes
 
 > [!NOTE]
-> **Offset domain proof:** half sums are bounded by 15 · 10^7 = 1.5e8, so v + 150000000 ∈ [0, 3e8) ⊂ [0, 2^29); three 10-bit passes cover 30 bits and the radix order equals the integer order.
+> **Cursor separation proof:** F0 and F1 each restart at OFF via arraycopy, so bucket k of B0 and bucket k of B1 both occupy exactly [OFF[k], OFF[k+1]); the regression witness [-36,36] is the permanent guard.
 
 > [!WARNING]
-> **Bounds:** masks ≤ 2^15 equals the static buffer size; bucket lengths comb[k] sum to masks so every cursor write lands inside its segment; staircase pointers never leave [off[k], off[k+1]).
+> **Bounds:** masks ≤ 2^15 = CAP; staircase indices ia, jb stay inside their OFF ranges by the loop conditions; sort ranges are exact bucket spans.
 
-* **Zero heap:** all buffers static in BSS; radix scratch static; no malloc, no free, no recursion.
-* **Overflow:** pair sums ≤ 6e8 held in long; the sentinel 4e9 fits long; int return is exact because the answer never exceeds 3e8.
-* **Builtins:** __builtin_popcount and __builtin_ctz are single-instruction GCC/Clang intrinsics, exact on the mask domain.
-* **Performance honesty:** 171 ms is a harness label; the invariant is three radix passes plus one staircase walk per bucket pair, i.e. O(2^n) word-RAM work with no comparator calls.
+* **Overflow:** int staircase is safe because pair sums ≤ 6e8 < 2^31; sums of halves accumulate in long before the int cast.
+* **Allocation:** zero per call; the only objects are process-lifetime statics.
+* **Performance honesty:** 197 ms is a harness label; the invariant is one fused pass, range sorts, and one staircase walk per bucket pair.
 
 ## 📊 Complexity
 
 | Measure | Bound |
 | :--- | :---: |
-| Time | $O(2^n)$ word-RAM, three radix passes plus staircase |
-| Space | $O(2^n)$ static BSS, zero heap |
+| Time | $O(2^n \log 2^n)$ dominated by range sorts, staircase $O(2^n)$ |
+| Space | $O(2^n)$ static flat buffers |
 
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/74038190/212898774-0a96dc1d-c908-4ce8-9dd7-a71aab6e1c2b.gif" width="200" alt="banner small">
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="200" alt="banner small">
 
 *Built under the Tar0 registry: R1 binding from evidence, R2 proof-carrying pruning, R9 single kernel multi-alias.*
 
 </div>
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:00E676,100:263238&height=120&section=footer&animation=fadeIn)
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:FF6F00,100:B71C1C&height=120&section=footer&animation=fadeIn)
