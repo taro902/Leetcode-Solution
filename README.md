@@ -2,9 +2,9 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=1500&pause=600&color=00897B&center=true&vCenter=true&width=640&lines=One+algebra,+five+idioms,+zero+drift;Fact+first,+code+second,+witnesses+always;Read+it+once,+reuse+it+forever" alt="animated typing title">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=1500&pause=600&color=00897B&center=true&vCenter=true&width=640&lines=One+algebra,+five+idioms,+zero+drift;The+map+and+the+vault+count+themselves;Fact+first,+code+second,+witnesses+always" alt="animated typing title">
 
-![License](https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge) ![Languages](https://img.shields.io/badge/Languages-5-8E24AA?style=for-the-badge) ![Format](https://img.shields.io/badge/Format-study%20dossiers-FFA000?style=for-the-badge) ![Readers](https://img.shields.io/badge/For-readers%20who%20want%20the%20why-00897B?style=for-the-badge) ![Visitors](https://komarev.com/ghpvc/?username=taro902&label=Visitors&color=8E24AA&style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge) ![Languages](https://img.shields.io/badge/Languages-5-8E24AA?style=for-the-badge) ![Vault](https://img.shields.io/badge/Vault-live%20and%20self--counting-FFA000?style=for-the-badge) ![Readers](https://img.shields.io/badge/For-readers%20who%20want%20the%20why-00897B?style=for-the-badge) ![Visitors](https://komarev.com/ghpvc/?username=taro902&label=Visitors&color=8E24AA&style=for-the-badge)
 
 </div>
 
@@ -15,17 +15,17 @@
 </td>
 <td align="left">
 <strong>What this repo puts on your desk.</strong><br>
-1 · One hard problem dissected five times: the same proven algebra in Racket, C, Java, Python, JavaScript, with zero drift between ports.<br>
+1 · Hard problems dissected once per language: the same proven algebra in Racket, C, Java, Python, JavaScript, with zero drift between ports.<br>
 2 · Every technique named, priced, and witnessed, so you can lift it onto problems you have not seen yet.<br>
 3 · A reading path built for study: structural fact before code, witnesses before claims, failure modes before praise.<br>
-4 · A repository map that is always current, so your eyes never chase phantom files.<br>
+4 · A map and a vault that count themselves: every new folder or file appears here, checked and metered, without human hands.<br>
 </td>
 </tr>
 </table>
 
 <div align="center">
 
-**[🎓 Takeaways](#-what-you-walk-away-with) · [🧭 Reading Path](#-how-to-read-a-dossier) · [🗂 The Map](#-the-map) · [🌐 Spectrum](#-language-spectrum) · [📐 The Algebra](#-one-algebra-taught-once) · [🧪 Witnesses](#-witness-discipline) · [🛡️ Catalogue](#-failure-mode-catalogue) · [📈 Charts](#-live-charts) · [🗺️ Roadmap](#-roadmap) · [🤝 Protocol](#-study-protocol)**
+**[🎓 Takeaways](#-what-you-walk-away-with) · [🧭 Reading Path](#-how-to-read-a-dossier) · [🗂 The Map](#-the-map) · [📒 The Vault](#-the-live-vault) · [🌐 Spectrum](#-language-spectrum) · [📐 The Algebra](#-one-algebra-taught-once) · [🧪 Witnesses](#-witness-discipline) · [🛡️ Catalogue](#-failure-mode-catalogue) · [📈 Charts](#-live-charts) · [🤝 Protocol](#-study-protocol)**
 
 </div>
 
@@ -33,12 +33,13 @@
 
 This repository is organized around transferable technique, not around answer keys. Each dossier is written so that closing the tab leaves something durable in your head.
 
-* **Run-fold scanning.** Maximal equal-character runs are folded in one pass; the fold, not the string, is the object you reason about. You will recognize this shape in palindrome grouping, compression, and window problems.
+* **Run-fold scanning.** Maximal equal-character runs are folded in one pass; the fold, not the string, is the object you reason about.
 * **Priced greedy with exchange arguments.** When several repairs compete for a limited budget, each repair carries a price; buying cheapest-first is justified by an explicit swap argument, never by intuition.
-* **Regime analysis.** Some problems change their cost algebra at size thresholds. You learn to locate the thresholds first and solve inside each regime, instead of forcing one formula across all inputs.
-* **Evidence-bound naming.** Entry-point names are taken from drivers, templates, and error reports. A title is a rumor; a driver line is a contract. This habit alone deletes an entire class of wrong-answer submissions.
-* **Witness families.** A proof is a set of inputs that discriminates competing formulas. You learn to build small families (here: 21, 25, 27 identical characters) that kill every wrong price table.
-* **Closed failure modes.** Every dossier ends with a catalogue of ways the code could have failed and the mathematical reason each way is sealed. Reading them trains paranoia that pays rent.
+* **Regime analysis.** Some problems change their cost algebra at size thresholds; locate the thresholds first, solve inside each regime.
+* **Online refutation.** Universal negations (no equal adjacent pair, no run of three) are falsifiable at the first violation; a verifier should die at its cheapest contradiction.
+* **Evidence-bound naming.** Entry-point names come from drivers, templates, and error reports. A title is a rumor; a driver line is a contract.
+* **Witness families.** A proof is a set of inputs that discriminates competing formulas; small hand-computable families kill every wrong variant.
+* **Closed failure modes.** Every dossier ends with the ways the code could have failed and the mathematical reason each way is sealed.
 
 ## 🧭 How to Read a Dossier
 
@@ -68,8 +69,8 @@ flowchart LR
 1. **Structural fact.** Why the algorithm is the only possible one; the invariant and the closure property that make it composable.
 2. **Pipeline.** A diagram of the scan and the accumulators, with exact variable names you will meet in the source.
 3. **Price market.** When a budget exists, its prices are tabulated cheapest-first with the exchange argument in one sentence.
-4. **Witness traces.** Full arithmetic tables; you can recompute every cell by hand and catch any lie.
-5. **Source.** The kernel, comment-free, single-responsibility, with public names delegating to one private kernel.
+4. **Witness traces.** Full arithmetic tables; recompute every cell by hand and catch any lie.
+5. **Source.** The kernel, comment-free, single-responsibility, public names delegating to one private kernel.
 6. **Failure notes.** Bounds, overflow, sentinel, binding, allocation: each closed with a reason, not a hope.
 
 ## 🗂 The Map
@@ -82,33 +83,26 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 ├── 📁 .github/
 │   └── 📁 workflows/
 │       └── ⚙️ auto-atlas.yml
-├── 📁 Problem/
-│   ├── 📁 2299-strong-password-checker-II/
-│   │   └── 📁 c/
-│   │       ├── 📖 README.md
-│   │       └── ⚪ solution.c
-│   └── 📁 420-strong-password-checker /
-│       ├── 📁 c/
-│       │   ├── 📖 README.md
-│       │   └── ⚪ solution.c
-│       ├── 📁 Java/
-│       │   ├── 📖 README.md
-│       │   └── 🟠 solution.java
-│       ├── 📁 JavaScript/
-│       │   ├── 📖 README.md
-│       │   └── 🟡 solution.js
-│       ├── 📁 python3/
-│       │   ├── 📖 README.md
-│       │   └── 🔵 solution.py
-│       └── 📁 racket/
-│           ├── 📖 README.md
-│           └── 🟪 solution.rkt
+├──  Problem/
+│   ├── 📁 420-strong-password-checker/
+│   └──  2299-strong-password-checker-ii/
 ├── ⚖️ LICENSE
-└── 📖 README.md
+└──  README.md
 ```
 
-📊 15 files · 11 folders
+📊 mirror of the last commit
 <!-- AUTO-TREE:END -->
+
+## 📒 The Live Vault
+
+One line per problem. A checkbox ticks the moment a dossier folder exists; the five-square meter fills, language by language, the moment a source file lands anywhere inside that folder. Create a folder or drop a file anywhere in the repository and the vault recounts itself in the next commit.
+
+<!-- AUTO-LEDGER:START -->
+- [x] **420 · Strong Password Checker** · 🟪⚪🟠🔵 · [dossier](Problem/420-strong-password-checker)
+- [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · [dossier](Problem/2299-strong-password-checker-ii)
+
+📊 2 problems · meter order: Racket · C · Java · JavaScript · Python
+<!-- AUTO-LEDGER:END -->
 
 ## 🌐 Language Spectrum
 
@@ -176,10 +170,11 @@ A formula table is a claim; a witness family is a test. The repo keeps families 
 | :--- | :--- | :---: |
 | 21 identical chars | price-1 existence: without mod-0 buys the answer would be 8, not 7 | **7** |
 | 25 identical chars | price-2 existence: skipping mod-1 buys yields 12, not 11 | **11** |
-| 27 identical chars | price-3 closed form: a naive per-run loop and the closed form agree only when concentration holds | **13** |
+| 27 identical chars | price-3 closed form: concentration must hold for naive and closed forms to agree | **13** |
 | `"aaa111"` | regime boundary at $n = 6$: replacement-only algebra | **2** |
 | `"a"` | regime below 6: insertion algebra dominates | **5** |
 | `"1337C0d3"` | already strong: zero cost, no false positive | **0** |
+| `"Me+You--IsMyDream"` | online refutation: one adjacent pair kills the conjunction at 2299 | **false** |
 
 ```diff
 - weak:   Baaabb0     a run of three identical characters
@@ -187,7 +182,7 @@ A formula table is a claim; a witness family is a test. The repo keeps families 
 ```
 
 > [!NOTE]
-> **How to build your own family.** Take the cheapest structure that exercises one price at a time: length equal to a multiple of 3, then multiple of 3 plus 1, then plus 2. If two candidate formulas disagree, one member of the family exposes it by hand arithmetic.
+> **How to build your own family.** Take the cheapest structure that exercises one price at a time: length equal to a multiple of 3, then plus 1, then plus 2. If two candidate formulas disagree, one member of the family exposes it by hand arithmetic.
 
 ## 🛡️ Failure-Mode Catalogue
 
@@ -200,7 +195,7 @@ Every dossier closes with this table shape. The root keeps the repo-level record
 | Index bounds | run walks can overrun if the inner test is misplaced | inner loop tests the bound before every read; outer index jumps monotonically |
 | Overflow | priced divisions and budgets accumulate | per-language audit: exact integers in Racket and Python, int audit in C and Java, 2^53 exactness in JavaScript |
 | Keyword collision | `del` is reserved in Python | budget renamed once, at the single site of use |
-| Empty history noise | regenerated content can commit no-ops | commit only when the diff is non-empty |
+| Stale documentation | hand-written trees and roadmaps rot the moment a file moves | the map and the vault are regenerated artifacts; humans write prose, machines write inventories |
 
 > [!CAUTION]
 > **The binding lesson, verbatim in spirit:** a compile error that names a symbol is a driver line speaking to you. The previous alias set was lawful under no-evidence rules and still wrong; evidence outranks convention, and the fix was one rename, not a rewrite.
@@ -218,22 +213,13 @@ Every dossier closes with this table shape. The root keeps the repo-level record
 
 </div>
 
-## 🗺️ Roadmap
-
-| # | Problem | Technique on display | Status |
-| :---: | :--- | :--- | :--- |
-| 420 | Strong Password Checker | regime analysis, priced greedy, run-fold scan | ✅ Racket accepted 54 / 54 · four ports ready |
-| 2299 | Strong Password Checker II | budgeted editing with queries | 🔜 queued |
-| 2213 | Repeating Substring After Queries | segment tree with boundary-character invariant | 🧊 scouted |
-| 3487 | Two-Occurrence Substring Maximum | downward-closed validity, sliding window | 🧊 scouted |
-
 ## 🤝 Study Protocol
 
-1. Pick the language you want to sharpen; open its dossier in the problem folder.
+1. Pick the language you want to sharpen; open its dossier from the vault line.
 2. Read the structural fact and close the tab; predict the pipeline from memory.
-3. Reopen at the witness table; recompute the 21 / 25 / 27 row by hand before looking at the answer column.
+3. Reopen at the witness table; recompute one row by hand before looking at the answer column.
 4. Read the source last, and only to confirm what you already derived.
-5. Port the kernel to a sixth language yourself; the algebra is language-agnostic and the failure catalogue tells you which traps to seal first.
+5. Port the kernel to a sixth language yourself; the failure catalogue tells you which traps to seal first, and the vault meter gains a sixth square the day you commit it.
 
 <div align="center">
 
@@ -246,10 +232,3 @@ Every dossier closes with this table shape. The root keeps the repo-level record
 </div>
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:D81B60,100:1E88E5&height=130&section=footer&animation=fadeIn)
-
-<!-- AUTO-LEDGER:START -->
-- [x] **2299 · Strong Password Checker Ii** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
-- [x] **420 · Strong Password Checker ** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker )
-
-📊 2 problems · 12 files inside dossiers
-<!-- AUTO-LEDGER:END -->
