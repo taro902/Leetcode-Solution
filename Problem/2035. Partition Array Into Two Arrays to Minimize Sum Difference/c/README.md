@@ -356,7 +356,7 @@ The full live file in this folder is vertex R: the fragment above is quoted from
 ---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/26n6WywJyh39n9pBu/giphy.gif" width="300" alt="sticker slot B"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212284094-e50ceae2-de86-4dd6-9f9c-a3ebcb3ede9e.gif" width="300" alt="sticker slot B"/>
 </p>
 
 <p align="center">
