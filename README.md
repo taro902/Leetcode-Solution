@@ -85,9 +85,11 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 │       └── ⚙️ auto-atlas.yml
 ├── 📁 Problem/
 │   ├── 📁 2035. Partition Array Into Two Arrays to Minimize Sum Difference/
-│   │   └── 📁 c/
-│   │       ├── 📖 README.md
-│   │       └── ⚪ solution.c
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   └── 📁 java/
+│   │       └── 🟠 solution.java
 │   ├── 📁 2299-strong-password-checker-II/
 │   │   └── 📁 c/
 │   │       ├── 📖 README.md
@@ -112,7 +114,7 @@ The tree mirrors the repository at the last commit. Folders first, files after, 
 └── 📖 README.md
 ```
 
-📊 17 files · 13 folders
+📊 18 files · 14 folders
 <!-- AUTO-TREE:END -->
 
 ## 📒 The Live Vault
