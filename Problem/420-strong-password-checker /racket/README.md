@@ -220,7 +220,7 @@ Spend map conserves the deletion budget: 🟪 one deletion per mod-0 cancellatio
 
 ![Accepted](https://img.shields.io/badge/Accepted-54%2F54%20testcases-00C853?style=for-the-badge&logo=leetcode&logoColor=white)
 
-*Built under the SUPER GENIUS HUMAN CODER registry: R1 binding from evidence, R2 proof-carrying pruning, R9 single kernel multi-alias.*
+*Built under Tar0 registry: R1 binding from evidence, R2 proof-carrying pruning, R9 single kernel multi-alias.*
 
 </div>
 
