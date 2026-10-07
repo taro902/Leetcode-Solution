@@ -61,9 +61,10 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   ├── 📁 javascript/
 │   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
-│   │   └── 📁 python/
-│   │       ├── 📖 README.md
-│   │       └── 🔵 solution.py
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 🟪 solution.rkt
 │   ├── 📁 2299-strong-password-checker-II/
 │   │   └── 📁 c/
 │   │       ├── 📖 README.md
@@ -88,7 +89,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 └── 📖 README.md
 ```
 
-📊 23 files · 16 folders
+📊 24 files · 16 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -99,10 +100,10 @@ Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python ·
 
 <!-- AUTO-LEDGER:START -->
 - [x] **420 · Strong Password Checker** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker%20)
-- [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · ⬜⚪🟠🟡🔵 · 8 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
+- [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 9 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
 - [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
 
-📊 3 problems · 20 files inside dossiers
+📊 3 problems · 21 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
