@@ -53,28 +53,36 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 ├── 📁 Problem/
 │   ├── 📁 10-regular-expression-matching/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 126-word-ladder-ii/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 2035. Partition Array Into Two Arrays to Minimize Sum Difference/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -93,40 +101,52 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │       └── 🟪 solution.rkt
 │   ├── 📁 218-the-skyline-problem/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 315-count-of-smaller-numbers-after-self/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 4-median-of-two-sorted-arrays/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 420-strong-password-checker/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -145,70 +165,90 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │       └── 🟪 solution.rkt
 │   ├── 📁 488-zuma-game/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 65-valid-number/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 736-parse-lisp-expression/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 84-largest-rectangle-in-histogram/
 │   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
 │   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟠 Solution.java
 │   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🟡 solution.js
 │   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
 │   │   │   └── 🔵 solution.py
-│   │   ├── 📁 racket/
-│   │   │   └── 🟪 solution.rkt
-│   │   └── 📖 README.md
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   └── 📁 887-super-egg-drop/
 │       ├── 📁 c/
+│       │   ├── 📖 README.md
 │       │   └── ⚪ solution.c
 │       ├── 📁 java/
+│       │   ├── 📖 README.md
 │       │   └── 🟠 Solution.java
 │       ├── 📁 javascript/
+│       │   ├── 📖 README.md
 │       │   └── 🟡 solution.js
 │       ├── 📁 python/
+│       │   ├── 📖 README.md
 │       │   └── 🔵 solution.py
-│       ├── 📁 racket/
-│       │   └── 🟪 solution.rkt
-│       └── 📖 README.md
+│       └── 📁 racket/
+│           ├── 📖 README.md
+│           └── 🟪 solution.rkt
 ├── 🔵 generator_sakral.py
 ├── ⚖️ LICENSE
 └── 📖 README.md
 ```
 
-📊 84 files · 75 folders
+📊 124 files · 75 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -218,20 +258,20 @@ One line per problem. The checkbox ticks the moment a dossier folder exists; the
 Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python · ⬜ not yet
 
 <!-- AUTO-LEDGER:START -->
-- [x] **4 · Median Of Two Sorted Arrays** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/4-median-of-two-sorted-arrays)
-- [x] **10 · Regular Expression Matching** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/10-regular-expression-matching)
-- [x] **65 · Valid Number** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/65-valid-number)
-- [x] **84 · Largest Rectangle In Histogram** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/84-largest-rectangle-in-histogram)
-- [x] **126 · Word Ladder II** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/126-word-ladder-ii)
-- [x] **218 · The Skyline Problem** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/218-the-skyline-problem)
-- [x] **315 · Count Of Smaller Numbers After Self** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/315-count-of-smaller-numbers-after-self)
+- [x] **4 · Median Of Two Sorted Arrays** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/4-median-of-two-sorted-arrays)
+- [x] **10 · Regular Expression Matching** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/10-regular-expression-matching)
+- [x] **65 · Valid Number** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/65-valid-number)
+- [x] **84 · Largest Rectangle In Histogram** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/84-largest-rectangle-in-histogram)
+- [x] **126 · Word Ladder II** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/126-word-ladder-ii)
+- [x] **218 · The Skyline Problem** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/218-the-skyline-problem)
+- [x] **315 · Count Of Smaller Numbers After Self** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/315-count-of-smaller-numbers-after-self)
 - [x] **420 · Strong Password Checker** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker)
-- [x] **488 · Zuma Game** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/488-zuma-game)
-- [x] **736 · Parse Lisp Expression** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/736-parse-lisp-expression)
-- [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/887-super-egg-drop)
+- [x] **488 · Zuma Game** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/488-zuma-game)
+- [x] **736 · Parse Lisp Expression** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/736-parse-lisp-expression)
+- [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/887-super-egg-drop)
 - [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
 
-📊 12 problems · 80 files inside dossiers
+📊 12 problems · 120 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
