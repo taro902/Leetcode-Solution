@@ -131,6 +131,22 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   ├── 📁 racket/
 │   │   │   └── 🟪 solution.rkt
 │   │   └── 📖 README.md
+│   ├── 📁 420-strong-password-checker/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 Java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 solution.java
+│   │   ├── 📁 JavaScript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python3/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 488-zuma-game/
 │   │   ├── 📁 c/
 │   │   │   └── ⚪ solution.c
@@ -196,7 +212,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 └── 📖 README.md
 ```
 
-📊 76 files · 71 folders
+📊 86 files · 77 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -213,13 +229,14 @@ Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python ·
 - [x] **126 · Word Ladder II** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/126-word-ladder-ii)
 - [x] **218 · The Skyline Problem** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/218-the-skyline-problem)
 - [x] **315 · Count Of Smaller Numbers After Self** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/315-count-of-smaller-numbers-after-self)
+- [x] **420 · Strong Password Checker** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker)
 - [x] **488 · Zuma Game** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/488-zuma-game)
 - [x] **736 · Parse Lisp Expression** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/736-parse-lisp-expression)
 - [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/887-super-egg-drop)
 - [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
 - [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
 
-📊 12 problems · 72 files inside dossiers
+📊 13 problems · 82 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
