@@ -1,0 +1,15 @@
+# 273. Integer to English Words (Python)
+
+| Status | Runtime | Memory | Language |
+| --- | --- | --- | --- |
+| **Accepted** | 0 ms | 0.0 MB | Python |
+
+## 🔗 Link
+[LeetCode Problem: Integer to English Words](https://leetcode.cominteger-to-english-words/)
+
+## 📸 Proof of Submission
+> ![Proof](https://placeholder.com)
+
+## 🧠 Explanation & Complexity
+- **Time Complexity:** $O(...)$
+- **Space Complexity:** $O(...)$
