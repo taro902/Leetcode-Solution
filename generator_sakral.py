@@ -1,37 +1,36 @@
 import os
 import re
-import datetime
 from pathlib import Path
 
 AUTHOR = "taro902"
 GITHUB_REPO = "https://github.com"
 
-BATCH_3_PROBLEMS = [
-    {"id": "30",  "title": "Substring with Concatenation of All Words"},
-    {"id": "32",  "title": "Longest Valid Parentheses"},
-    {"id": "41",  "title": "First Missing Positive"},
-    {"id": "44",  "title": "Wildcard Matching"},
-    {"id": "60",  "title": "Permutation Sequence"},
-    {"id": "68",  "title": "Text Justification"},
-    {"id": "76",  "title": "Minimum Window Substring"},
-    {"id": "85",  "title": "Maximal Rectangle"},
-    {"id": "87",  "title": "Scramble String"},
-    {"id": "115", "title": "Distinct Subsequences"},
-    {"id": "123", "title": "Best Time to Buy and Sell Stock III"},
-    {"id": "124", "title": "Binary Tree Maximum Path Sum"},
-    {"id": "132", "title": "Palindrome Partitioning II"},
-    {"id": "135", "title": "Candy"},
-    {"id": "140", "title": "Word Break II"},
-    {"id": "149", "title": "Max Points on a Line"},
-    {"id": "154", "title": "Find Minimum in Rotated Sorted Array II"},
-    {"id": "164", "title": "Maximum Gap"},
-    {"id": "174", "title": "Dungeon Game"},
-    {"id": "188", "title": "Best Time to Buy and Sell Stock IV"},
-    {"id": "212", "title": "Word Search II"},
-    {"id": "214", "title": "Shortest Palindrome"},
-    {"id": "224", "title": "Basic Calculator"},
-    {"id": "239", "title": "Sliding Window Maximum"},
-    {"id": "273", "title": "Integer to English Words"}
+BATCH_4_PROBLEMS = [
+    {"id": "301", "title": "Remove Invalid Parentheses"},
+    {"id": "312", "title": "Burst Balloons"},
+    {"id": "329", "title": "Longest Increasing Path in a Matrix"},
+    {"id": "336", "title": "Palindrome Pairs"},
+    {"id": "354", "title": "Russian Doll Envelopes"},
+    {"id": "363", "title": "Max Sum of Rectangle No Larger Than K"},
+    {"id": "403", "title": "Frog Jump"},
+    {"id": "407", "title": "Trapping Rain Water II"},
+    {"id": "410", "title": "Split Array Largest Sum"},
+    {"id": "440", "title": "K-th Smallest in Lexicographical Order"},
+    {"id": "460", "title": "LFU Cache"},
+    {"id": "472", "title": "Concatenated Words"},
+    {"id": "480", "title": "Sliding Window Median"},
+    {"id": "493", "title": "Reverse Pairs"},
+    {"id": "502", "title": "IPO"},
+    {"id": "564", "title": "Find the Closest Palindrome"},
+    {"id": "632", "title": "Smallest Range Covering Elements from K Lists"},
+    {"id": "679", "title": "24 Game"},
+    {"id": "685", "title": "Redundant Connection II"},
+    {"id": "719", "title": "Find K-th Smallest Pair Distance"},
+    {"id": "726", "title": "Number of Atoms"},
+    {"id": "745", "title": "Prefix and Suffix Search"},
+    {"id": "757", "title": "Set Intersection Size At Least Two"},
+    {"id": "778", "title": "Swim in Rising Water"},
+    {"id": "803", "title": "Bricks Falling When Hit"}
 ]
 
 TEMPLATES = {
@@ -62,8 +61,9 @@ var solution = function(args) {{
 }};
 """,
     "python": """import math
-from typing import List, Optional, Dict, Set
-from collections import defaultdict, deque
+from typing import List, Optional, Dict, Set, Tuple
+from collections import defaultdict, deque, Counter
+import heapq
 
 class Solution:
     def solve(self):
@@ -100,7 +100,7 @@ README_TEMPLATE = """# {full_title} ({lang_title})
 - **Space Complexity:** $O(...)$
 """
 
-class Batch3Generator:
+class Batch4Generator:
     def __init__(self):
         self.root_dir = Path(os.getcwd())
         self.problem_dir = self.root_dir / "Problem"
@@ -115,16 +115,16 @@ class Batch3Generator:
         return re.sub(r'[\s-]+', '-', clean).strip().lower()
 
     def run(self):
-        print("Initializing Batch 3 Protocol...")
+        print("Initializing Batch 4: The Relief Provider...")
         
-        for prob in BATCH_3_PROBLEMS:
+        for prob in BATCH_4_PROBLEMS:
             slug = self._sanitize_title(prob["title"])
             folder_name = f"{prob['id']}-{slug}"
             full_path = self.problem_dir / folder_name
             full_title = f"{prob['id']}. {prob['title']}"
             link = f"https://leetcode.com{slug}/"
             
-            print(f"[*] Deploying: {full_title}")
+            print(f"[*] Generating: {full_title}")
             self._ensure_dir(full_path)
 
             for lang, filename in FILE_MAP.items():
@@ -148,8 +148,8 @@ class Batch3Generator:
                     with open(readme_path, "w", encoding="utf-8") as f:
                         f.write(readme_content)
 
-        print("\nBatch 3 Successfully Deployed.")
+        print("\nBatch 4 Successfully Deployed.")
 
 if __name__ == "__main__":
-    app = Batch3Generator()
+    app = Batch4Generator()
     app.run()

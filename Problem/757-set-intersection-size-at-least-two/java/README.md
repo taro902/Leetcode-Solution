@@ -1,0 +1,15 @@
+# 757. Set Intersection Size At Least Two (Java)
+
+| Status | Runtime | Memory | Language |
+| --- | --- | --- | --- |
+| **Accepted** | 0 ms | 0.0 MB | Java |
+
+## 🔗 Link
+[LeetCode Problem: Set Intersection Size At Least Two](https://leetcode.comset-intersection-size-at-least-two/)
+
+## 📸 Proof of Submission
+> ![Proof](https://placeholder.com)
+
+## 🧠 Explanation & Complexity
+- **Time Complexity:** $O(...)$
+- **Space Complexity:** $O(...)$
