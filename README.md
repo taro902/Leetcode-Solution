@@ -103,10 +103,6 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   ├── 📁 racket/
 │   │   │   └── 🟪 solution.rkt
 │   │   └── 📖 README.md
-│   ├── 📁 2299-strong-password-checker-II/
-│   │   └── 📁 c/
-│   │       ├── 📖 README.md
-│   │       └── ⚪ solution.c
 │   ├── 📁 315-count-of-smaller-numbers-after-self/
 │   │   ├── 📁 c/
 │   │   │   └── ⚪ solution.c
@@ -212,7 +208,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 └── 📖 README.md
 ```
 
-📊 86 files · 77 folders
+📊 84 files · 75 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -234,9 +230,8 @@ Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python ·
 - [x] **736 · Parse Lisp Expression** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/736-parse-lisp-expression)
 - [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/887-super-egg-drop)
 - [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
-- [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
 
-📊 13 problems · 82 files inside dossiers
+📊 12 problems · 80 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
