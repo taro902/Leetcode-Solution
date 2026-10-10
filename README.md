@@ -51,6 +51,30 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   └── 📁 workflows/
 │       └── ⚙️ auto-atlas.yml
 ├── 📁 Problem/
+│   ├── 📁 10-regular-expression-matching/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
+│   ├── 📁 126-word-ladder-ii/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
 │   ├── 📁 2035. Partition Array Into Two Arrays to Minimize Sum Difference/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -83,6 +107,30 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 c/
 │   │       ├── 📖 README.md
 │   │       └── ⚪ solution.c
+│   ├── 📁 315-count-of-smaller-numbers-after-self/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
+│   ├── 📁 4-median-of-two-sorted-arrays/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
 │   ├── 📁 488-zuma-game/
 │   │   ├── 📁 c/
 │   │   │   └── ⚪ solution.c
@@ -119,6 +167,18 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   ├── 📁 racket/
 │   │   │   └── 🟪 solution.rkt
 │   │   └── 📖 README.md
+│   ├── 📁 84-largest-rectangle-in-histogram/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
 │   └── 📁 887-super-egg-drop/
 │       ├── 📁 c/
 │       │   └── ⚪ solution.c
@@ -136,7 +196,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 └── 📖 README.md
 ```
 
-📊 46 files · 41 folders
+📊 76 files · 71 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -146,15 +206,20 @@ One line per problem. The checkbox ticks the moment a dossier folder exists; the
 Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python · ⬜ not yet
 
 <!-- AUTO-LEDGER:START -->
+- [x] **4 · Median Of Two Sorted Arrays** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/4-median-of-two-sorted-arrays)
+- [x] **10 · Regular Expression Matching** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/10-regular-expression-matching)
 - [x] **65 · Valid Number** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/65-valid-number)
+- [x] **84 · Largest Rectangle In Histogram** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/84-largest-rectangle-in-histogram)
+- [x] **126 · Word Ladder II** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/126-word-ladder-ii)
 - [x] **218 · The Skyline Problem** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/218-the-skyline-problem)
+- [x] **315 · Count Of Smaller Numbers After Self** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/315-count-of-smaller-numbers-after-self)
 - [x] **488 · Zuma Game** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/488-zuma-game)
 - [x] **736 · Parse Lisp Expression** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/736-parse-lisp-expression)
 - [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/887-super-egg-drop)
 - [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
 - [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
 
-📊 7 problems · 42 files inside dossiers
+📊 12 problems · 72 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
