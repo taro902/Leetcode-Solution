@@ -387,6 +387,38 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 301-remove-invalid-parentheses/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 312-burst-balloons/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 315-count-of-smaller-numbers-after-self/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -419,6 +451,70 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 329-longest-increasing-path-in-a-matrix/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 336-palindrome-pairs/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 354-russian-doll-envelopes/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 363-max-sum-of-rectangle-no-larger-than-k/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 4-median-of-two-sorted-arrays/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -435,7 +531,55 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 403-frog-jump/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 407-trapping-rain-water-ii/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 41-first-missing-positive/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 410-split-array-largest-sum/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
@@ -483,7 +627,119 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 440-k-th-smallest-in-lexicographical-order/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 460-lfu-cache/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 472-concatenated-words/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 480-sliding-window-median/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 488-zuma-game/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 493-reverse-pairs/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 502-ipo/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 564-find-the-closest-palindrome/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
@@ -515,7 +771,39 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 632-smallest-range-covering-elements-from-k-lists/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 65-valid-number/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 679-24-game/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
@@ -547,6 +835,54 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 685-redundant-connection-ii/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 719-find-k-th-smallest-pair-distance/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 726-number-of-atoms/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 736-parse-lisp-expression/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -563,7 +899,71 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 745-prefix-and-suffix-search/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 757-set-intersection-size-at-least-two/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 76-minimum-window-substring/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 778-swim-in-rising-water/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 803-bricks-falling-when-hit/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
@@ -648,7 +1048,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 └── 📖 README.md
 ```
 
-📊 374 files · 225 folders
+📊 624 files · 375 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -689,14 +1089,39 @@ Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python ·
 - [x] **224 · Basic Calculator** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/224-basic-calculator)
 - [x] **239 · Sliding Window Maximum** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/239-sliding-window-maximum)
 - [x] **273 · Integer To English Words** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/273-integer-to-english-words)
+- [x] **301 · Remove Invalid Parentheses** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/301-remove-invalid-parentheses)
+- [x] **312 · Burst Balloons** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/312-burst-balloons)
 - [x] **315 · Count Of Smaller Numbers After Self** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/315-count-of-smaller-numbers-after-self)
+- [x] **329 · Longest Increasing Path In A Matrix** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/329-longest-increasing-path-in-a-matrix)
+- [x] **336 · Palindrome Pairs** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/336-palindrome-pairs)
+- [x] **354 · Russian Doll Envelopes** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/354-russian-doll-envelopes)
+- [x] **363 · Max Sum Of Rectangle No Larger Than K** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/363-max-sum-of-rectangle-no-larger-than-k)
+- [x] **403 · Frog Jump** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/403-frog-jump)
+- [x] **407 · Trapping Rain Water II** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/407-trapping-rain-water-ii)
+- [x] **410 · Split Array Largest Sum** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/410-split-array-largest-sum)
 - [x] **420 · Strong Password Checker** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker)
+- [x] **440 · K Th Smallest In Lexicographical Order** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/440-k-th-smallest-in-lexicographical-order)
+- [x] **460 · Lfu Cache** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/460-lfu-cache)
+- [x] **472 · Concatenated Words** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/472-concatenated-words)
+- [x] **480 · Sliding Window Median** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/480-sliding-window-median)
 - [x] **488 · Zuma Game** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/488-zuma-game)
+- [x] **493 · Reverse Pairs** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/493-reverse-pairs)
+- [x] **502 · Ipo** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/502-ipo)
+- [x] **564 · Find The Closest Palindrome** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/564-find-the-closest-palindrome)
+- [x] **632 · Smallest Range Covering Elements From K Lists** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/632-smallest-range-covering-elements-from-k-lists)
+- [x] **679 · 24 Game** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/679-24-game)
+- [x] **685 · Redundant Connection II** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/685-redundant-connection-ii)
+- [x] **719 · Find K Th Smallest Pair Distance** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/719-find-k-th-smallest-pair-distance)
+- [x] **726 · Number Of Atoms** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/726-number-of-atoms)
 - [x] **736 · Parse Lisp Expression** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/736-parse-lisp-expression)
+- [x] **745 · Prefix And Suffix Search** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/745-prefix-and-suffix-search)
+- [x] **757 · Set Intersection Size At Least Two** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/757-set-intersection-size-at-least-two)
+- [x] **778 · Swim In Rising Water** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/778-swim-in-rising-water)
+- [x] **803 · Bricks Falling When Hit** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/803-bricks-falling-when-hit)
 - [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/887-super-egg-drop)
 - [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
 
-📊 37 problems · 370 files inside dossiers
+📊 62 problems · 620 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
