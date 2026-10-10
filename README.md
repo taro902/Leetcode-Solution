@@ -67,31 +67,76 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 218-the-skyline-problem/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
 │   ├── 📁 2299-strong-password-checker-II/
 │   │   └── 📁 c/
 │   │       ├── 📖 README.md
 │   │       └── ⚪ solution.c
-│   └── 📁 420-strong-password-checker /
+│   ├── 📁 488-zuma-game/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
+│   ├── 📁 65-valid-number/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
+│   ├── 📁 736-parse-lisp-expression/
+│   │   ├── 📁 c/
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   └── 🔵 solution.py
+│   │   ├── 📁 racket/
+│   │   │   └── 🟪 solution.rkt
+│   │   └── 📖 README.md
+│   └── 📁 887-super-egg-drop/
 │       ├── 📁 c/
-│       │   ├── 📖 README.md
 │       │   └── ⚪ solution.c
-│       ├── 📁 Java/
-│       │   ├── 📖 README.md
-│       │   └── 🟠 solution.java
-│       ├── 📁 JavaScript/
-│       │   ├── 📖 README.md
+│       ├── 📁 java/
+│       │   └── 🟠 Solution.java
+│       ├── 📁 javascript/
 │       │   └── 🟡 solution.js
-│       ├── 📁 python3/
-│       │   ├── 📖 README.md
+│       ├── 📁 python/
 │       │   └── 🔵 solution.py
-│       └── 📁 racket/
-│           ├── 📖 README.md
-│           └── 🟪 solution.rkt
+│       ├── 📁 racket/
+│       │   └── 🟪 solution.rkt
+│       └── 📖 README.md
+├── 🔵 generator_sakral.py
 ├── ⚖️ LICENSE
 └── 📖 README.md
 ```
 
-📊 25 files · 17 folders
+📊 46 files · 41 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -101,11 +146,15 @@ One line per problem. The checkbox ticks the moment a dossier folder exists; the
 Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python · ⬜ not yet
 
 <!-- AUTO-LEDGER:START -->
-- [x] **420 · Strong Password Checker** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/420-strong-password-checker%20)
+- [x] **65 · Valid Number** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/65-valid-number)
+- [x] **218 · The Skyline Problem** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/218-the-skyline-problem)
+- [x] **488 · Zuma Game** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/488-zuma-game)
+- [x] **736 · Parse Lisp Expression** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/736-parse-lisp-expression)
+- [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 6 files · [dossier](Problem/887-super-egg-drop)
 - [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
 - [x] **2299 · Strong Password Checker II** · ⬜⚪⬜⬜⬜ · 2 files · [dossier](Problem/2299-strong-password-checker-II)
 
-📊 3 problems · 22 files inside dossiers
+📊 7 problems · 42 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
