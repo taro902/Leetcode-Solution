@@ -67,6 +67,38 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 1000-minimum-cost-to-merge-stones/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 1044-longest-duplicate-substring/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 115-distinct-subsequences/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -979,7 +1011,87 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 827-making-a-large-island/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 829-consecutive-numbers-sum/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 834-sum-of-distances-in-tree/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 839-similar-string-groups/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 84-largest-rectangle-in-histogram/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 847-shortest-path-visiting-all-nodes/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
 │   │   │   └── ⚪ solution.c
@@ -1011,6 +1123,70 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
+│   ├── 📁 850-rectangle-area-ii/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 854-k-similar-strings/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 857-minimum-cost-to-hire-k-workers/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 862-shortest-subarray-with-sum-at-least-k/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
 │   ├── 📁 87-scramble-string/
 │   │   ├── 📁 c/
 │   │   │   ├── 📖 README.md
@@ -1027,7 +1203,311 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │   │   └── 📁 racket/
 │   │       ├── 📖 README.md
 │   │       └── 🟪 solution.rkt
-│   └── 📁 887-super-egg-drop/
+│   ├── 📁 871-minimum-number-of-refueling-stops/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 878-nth-magical-number/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 879-profitable-schemes/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 882-reachable-nodes-in-subdivided-graph/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 887-super-egg-drop/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 895-maximum-frequency-stack/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 902-numbers-at-most-n-given-digit-set/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 906-super-palindromes/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 920-number-of-music-playlists/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 924-minimize-malware-spread/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 928-minimize-malware-spread-ii/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 940-distinct-subsequences-ii/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 943-find-the-shortest-superstring/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 952-largest-component-size-by-common-factor/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 956-tallest-billboard/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 964-least-operators-to-express-number/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 968-binary-tree-cameras/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 975-odd-even-jump/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   ├── 📁 980-unique-paths-iii/
+│   │   ├── 📁 c/
+│   │   │   ├── 📖 README.md
+│   │   │   └── ⚪ solution.c
+│   │   ├── 📁 java/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟠 Solution.java
+│   │   ├── 📁 javascript/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🟡 solution.js
+│   │   ├── 📁 python/
+│   │   │   ├── 📖 README.md
+│   │   │   └── 🔵 solution.py
+│   │   └── 📁 racket/
+│   │       ├── 📖 README.md
+│   │       └── 🟪 solution.rkt
+│   └── 📁 992-subarrays-with-k-different-integers/
 │       ├── 📁 c/
 │       │   ├── 📖 README.md
 │       │   └── ⚪ solution.c
@@ -1048,7 +1528,7 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 └── 📖 README.md
 ```
 
-📊 624 files · 375 folders
+📊 924 files · 555 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
@@ -1118,10 +1598,40 @@ Meter legend: 🟪 Racket · ⚪ C · 🟠 Java · 🟡 JavaScript ·  Python ·
 - [x] **757 · Set Intersection Size At Least Two** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/757-set-intersection-size-at-least-two)
 - [x] **778 · Swim In Rising Water** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/778-swim-in-rising-water)
 - [x] **803 · Bricks Falling When Hit** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/803-bricks-falling-when-hit)
+- [x] **827 · Making A Large Island** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/827-making-a-large-island)
+- [x] **829 · Consecutive Numbers Sum** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/829-consecutive-numbers-sum)
+- [x] **834 · Sum Of Distances In Tree** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/834-sum-of-distances-in-tree)
+- [x] **839 · Similar String Groups** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/839-similar-string-groups)
+- [x] **847 · Shortest Path Visiting All Nodes** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/847-shortest-path-visiting-all-nodes)
+- [x] **850 · Rectangle Area II** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/850-rectangle-area-ii)
+- [x] **854 · K Similar Strings** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/854-k-similar-strings)
+- [x] **857 · Minimum Cost To Hire K Workers** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/857-minimum-cost-to-hire-k-workers)
+- [x] **862 · Shortest Subarray With Sum At Least K** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/862-shortest-subarray-with-sum-at-least-k)
+- [x] **871 · Minimum Number Of Refueling Stops** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/871-minimum-number-of-refueling-stops)
+- [x] **878 · Nth Magical Number** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/878-nth-magical-number)
+- [x] **879 · Profitable Schemes** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/879-profitable-schemes)
+- [x] **882 · Reachable Nodes In Subdivided Graph** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/882-reachable-nodes-in-subdivided-graph)
 - [x] **887 · Super Egg Drop** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/887-super-egg-drop)
+- [x] **895 · Maximum Frequency Stack** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/895-maximum-frequency-stack)
+- [x] **902 · Numbers At Most N Given Digit Set** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/902-numbers-at-most-n-given-digit-set)
+- [x] **906 · Super Palindromes** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/906-super-palindromes)
+- [x] **920 · Number Of Music Playlists** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/920-number-of-music-playlists)
+- [x] **924 · Minimize Malware Spread** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/924-minimize-malware-spread)
+- [x] **928 · Minimize Malware Spread II** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/928-minimize-malware-spread-ii)
+- [x] **940 · Distinct Subsequences II** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/940-distinct-subsequences-ii)
+- [x] **943 · Find The Shortest Superstring** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/943-find-the-shortest-superstring)
+- [x] **952 · Largest Component Size By Common Factor** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/952-largest-component-size-by-common-factor)
+- [x] **956 · Tallest Billboard** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/956-tallest-billboard)
+- [x] **964 · Least Operators To Express Number** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/964-least-operators-to-express-number)
+- [x] **968 · Binary Tree Cameras** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/968-binary-tree-cameras)
+- [x] **975 · Odd Even Jump** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/975-odd-even-jump)
+- [x] **980 · Unique Paths III** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/980-unique-paths-iii)
+- [x] **992 · Subarrays With K Different Integers** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/992-subarrays-with-k-different-integers)
+- [x] **1000 · Minimum Cost To Merge Stones** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/1000-minimum-cost-to-merge-stones)
+- [x] **1044 · Longest Duplicate Substring** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/1044-longest-duplicate-substring)
 - [x] **2035 · Partition Array Into Two Arrays To Minimize Sum Difference** · 🟪⚪🟠🟡🔵 · 10 files · [dossier](Problem/2035.%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference)
 
-📊 62 problems · 620 files inside dossiers
+📊 92 problems · 920 files inside dossiers
 <!-- AUTO-LEDGER:END -->
 
 The repo-wide census, as GitHub's own language bar reports it:
