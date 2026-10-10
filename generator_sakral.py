@@ -5,32 +5,37 @@ from pathlib import Path
 AUTHOR = "taro902"
 GITHUB_REPO = "https://github.com"
 
-BATCH_4_PROBLEMS = [
-    {"id": "301", "title": "Remove Invalid Parentheses"},
-    {"id": "312", "title": "Burst Balloons"},
-    {"id": "329", "title": "Longest Increasing Path in a Matrix"},
-    {"id": "336", "title": "Palindrome Pairs"},
-    {"id": "354", "title": "Russian Doll Envelopes"},
-    {"id": "363", "title": "Max Sum of Rectangle No Larger Than K"},
-    {"id": "403", "title": "Frog Jump"},
-    {"id": "407", "title": "Trapping Rain Water II"},
-    {"id": "410", "title": "Split Array Largest Sum"},
-    {"id": "440", "title": "K-th Smallest in Lexicographical Order"},
-    {"id": "460", "title": "LFU Cache"},
-    {"id": "472", "title": "Concatenated Words"},
-    {"id": "480", "title": "Sliding Window Median"},
-    {"id": "493", "title": "Reverse Pairs"},
-    {"id": "502", "title": "IPO"},
-    {"id": "564", "title": "Find the Closest Palindrome"},
-    {"id": "632", "title": "Smallest Range Covering Elements from K Lists"},
-    {"id": "679", "title": "24 Game"},
-    {"id": "685", "title": "Redundant Connection II"},
-    {"id": "719", "title": "Find K-th Smallest Pair Distance"},
-    {"id": "726", "title": "Number of Atoms"},
-    {"id": "745", "title": "Prefix and Suffix Search"},
-    {"id": "757", "title": "Set Intersection Size At Least Two"},
-    {"id": "778", "title": "Swim in Rising Water"},
-    {"id": "803", "title": "Bricks Falling When Hit"}
+BATCH_5_PROBLEMS = [
+    {"id": "827", "title": "Making A Large Island"},
+    {"id": "829", "title": "Consecutive Numbers Sum"},
+    {"id": "834", "title": "Sum of Distances in Tree"},
+    {"id": "839", "title": "Similar String Groups"},
+    {"id": "847", "title": "Shortest Path Visiting All Nodes"},
+    {"id": "850", "title": "Rectangle Area II"},
+    {"id": "854", "title": "K-Similar Strings"},
+    {"id": "857", "title": "Minimum Cost to Hire K Workers"},
+    {"id": "862", "title": "Shortest Subarray with Sum at Least K"},
+    {"id": "871", "title": "Minimum Number of Refueling Stops"},
+    {"id": "878", "title": "Nth Magical Number"},
+    {"id": "879", "title": "Profitable Schemes"},
+    {"id": "882", "title": "Reachable Nodes In Subdivided Graph"},
+    {"id": "895", "title": "Maximum Frequency Stack"},
+    {"id": "902", "title": "Numbers At Most N Given Digit Set"},
+    {"id": "906", "title": "Super Palindromes"},
+    {"id": "920", "title": "Number of Music Playlists"},
+    {"id": "924", "title": "Minimize Malware Spread"},
+    {"id": "928", "title": "Minimize Malware Spread II"},
+    {"id": "940", "title": "Distinct Subsequences II"},
+    {"id": "943", "title": "Find the Shortest Superstring"},
+    {"id": "952", "title": "Largest Component Size by Common Factor"},
+    {"id": "956", "title": "Tallest Billboard"},
+    {"id": "964", "title": "Least Operators to Express Number"},
+    {"id": "968", "title": "Binary Tree Cameras"},
+    {"id": "975", "title": "Odd Even Jump"},
+    {"id": "980", "title": "Unique Paths III"},
+    {"id": "992", "title": "Subarrays with K Different Integers"},
+    {"id": "1000", "title": "Minimum Cost to Merge Stones"},
+    {"id": "1044", "title": "Longest Duplicate Substring"}
 ]
 
 TEMPLATES = {
@@ -64,6 +69,7 @@ var solution = function(args) {{
 from typing import List, Optional, Dict, Set, Tuple
 from collections import defaultdict, deque, Counter
 import heapq
+import bisect
 
 class Solution:
     def solve(self):
@@ -100,7 +106,7 @@ README_TEMPLATE = """# {full_title} ({lang_title})
 - **Space Complexity:** $O(...)$
 """
 
-class Batch4Generator:
+class Batch5Generator:
     def __init__(self):
         self.root_dir = Path(os.getcwd())
         self.problem_dir = self.root_dir / "Problem"
@@ -115,16 +121,16 @@ class Batch4Generator:
         return re.sub(r'[\s-]+', '-', clean).strip().lower()
 
     def run(self):
-        print("Initializing Batch 4: The Relief Provider...")
+        print("Initiating FINAL PROTOCOL: Batch 5...")
         
-        for prob in BATCH_4_PROBLEMS:
+        for prob in BATCH_5_PROBLEMS:
             slug = self._sanitize_title(prob["title"])
             folder_name = f"{prob['id']}-{slug}"
             full_path = self.problem_dir / folder_name
             full_title = f"{prob['id']}. {prob['title']}"
             link = f"https://leetcode.com{slug}/"
             
-            print(f"[*] Generating: {full_title}")
+            print(f"[*] Constructing: {full_title}")
             self._ensure_dir(full_path)
 
             for lang, filename in FILE_MAP.items():
@@ -148,8 +154,8 @@ class Batch4Generator:
                     with open(readme_path, "w", encoding="utf-8") as f:
                         f.write(readme_content)
 
-        print("\nBatch 4 Successfully Deployed.")
+        print("\nFINAL BATCH DEPLOYED. THE ARCHIVE IS COMPLETE.")
 
 if __name__ == "__main__":
-    app = Batch4Generator()
+    app = Batch5Generator()
     app.run()
