@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=21&duration=3200&pause=800&color=0075ff&center=true&vCenter=true&width=880&lines=10+%C2%B7+Regular+Expression+Matching;Racket+lane+%C2%B7+Unboxed+Fixnum+NFA+Engine;0+ms+%C2%B7+Memory+100%25+%C2%B7+Absolute+Hardware+Ceiling" alt="typing line"/>
+  <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=21&duration=3200&pause=800&color=9E0013&center=true&vCenter=true&width=880&lines=10+%C2%B7+Regular+Expression+Matching;Racket+lane+%C2%B7+Unboxed+Fixnum+NFA+Engine;0+ms+%C2%B7+Memory+100%25+%C2%B7+Absolute+Hardware+Ceiling" alt="typing line"/>
 </p>
 
 <h1 align="center">Regular Expression Matching</h1>
@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/LeetCode-10%20%C2%B7%20Hard-0075ff?style=flat-square&logo=leetcode&logoColor=white" alt="problem"/>
-  <img src="https://img.shields.io/badge/Racket-8.x-9E0013?style=flat-square&logo=racket&logoColor=white" alt="language"/>
+  <img src="https://img.shields.io/badge/LeetCode-10%20%C2%B7%20Hard-9E0013?style=flat-square&logo=leetcode&logoColor=white" alt="problem"/>
+  <img src="https://img.shields.io/badge/Racket-8.x-660000?style=flat-square&logo=racket&logoColor=white" alt="language"/>
   <img src="https://img.shields.io/badge/Accepted-354%2F354-1a7f37?style=flat-square" alt="verdict"/>
-  <img src="https://img.shields.io/badge/Runtime-0%20ms%20%C2%B7%20100.00%25-0075ff?style=flat-square" alt="runtime"/>
-  <img src="https://img.shields.io/badge/Memory-101.17%20MB%20%C2%B7%20100.00%25-9E0013?style=flat-square" alt="memory"/>
+  <img src="https://img.shields.io/badge/Runtime-0%20ms%20%C2%B7%20100.00%25-9E0013?style=flat-square" alt="runtime"/>
+  <img src="https://img.shields.io/badge/Memory-101.17%20MB%20%C2%B7%20100.00%25-660000?style=flat-square" alt="memory"/>
   <img src="https://img.shields.io/badge/Proof-Oct%2011%2C%202026%2020%3A36-444444?style=flat-square" alt="proof"/>
 </p>
 
@@ -29,11 +29,11 @@
 
 ## Ⅰ. The Executive Abstract
 
-This repository does not merely solve LeetCode 10; it dissects, bypasses, and exploits the **Chez Scheme Virtual Machine** (the engine powering modern Racket). 
+This repository does not merely solve LeetCode 10; it dissects, bypasses, and exploits the **Chez Scheme Virtual Machine** (the ultra-fast compiler powering modern Racket). 
 
-Achieving a `0 ms` runtime and a `100.00%` memory beat in Racket is not accomplished by writing clever algorithmic loops. It is achieved by intimately understanding the physics of Scheme's memory allocation and weaponizing it. By shattering a monolithic 546-bit integer state into a 26-slot unboxed vector of **21-bit Fixnums**, we completely bypass the heap. Zero Bignums. Zero Garbage Collection churn. 
+Achieving a `0 ms` runtime and a `100.00%` memory beat in a functional language like Racket is not accomplished by writing clever recursive loops. It is achieved by intimately understanding the physics of Scheme's memory allocation and weaponizing it against the runtime itself. By shattering a monolithic 546-bit integer state into a 26-slot unboxed vector of **21-bit Fixnums**, we completely bypass the heap. 
 
-The memory footprint (`101.17 MB`) represents the absolute bare-metal baseline required by the Linux container simply to boot the Racket executable. You cannot mathematically force the VM lower.
+Zero Bignums. Zero Garbage Collection churn. The memory footprint (`101.17 MB`) represents the absolute bare-metal baseline required by the Linux container simply to mount the Racket executable. You cannot mathematically force the VM lower.
 
 ---
 
@@ -41,15 +41,19 @@ The memory footprint (`101.17 MB`) represents the absolute bare-metal baseline r
 
 To understand why this architecture is a low-level engineering marvel, you must understand how Racket fundamentally handles numbers at the silicon level.
 
-In 64-bit Racket architectures, integers that fit within **62 bits** are represented as **Fixnums**. A Fixnum is *not* an object. It is a raw binary value stuffed directly into a CPU register. The VM differentiates a Fixnum from a memory pointer by examining the lowest bits (Pointer Tagging). If a register value ends in a specific tag (e.g., `0`), the CPU ALU processes it immediately without dereferencing memory. **Fixnums require zero heap allocation.**
+In 64-bit Racket architectures, integers that fit within **62 bits** are represented as **Fixnums**. A Fixnum is *not* an object. It is a raw binary value stuffed directly into a CPU register. The VM differentiates a Fixnum from a memory pointer by examining the lowest bits (Pointer Tagging). If a register value ends in a specific tag, the CPU ALU processes it immediately without dereferencing RAM. **Fixnums require zero heap allocation.**
 
-However, the exact millisecond an integer exceeds 62 bits, the Chez Scheme VM panics and promotes it to a **Bignum**. A Bignum is a complex, heap-allocated object (`struct`). If you execute bitwise operations (`bitwise-ior`, `arithmetic-shift`) on a Bignum inside a tight loop, you force the VM to allocate new heap structs dynamically and trigger the Garbage Collector (GC) relentlessly.
+However, the exact millisecond an integer overflows 62 bits, the Chez Scheme VM panics and promotes it to a **Bignum**. A Bignum is a complex, heap-allocated struct. If you execute bitwise operations (`bitwise-ior`, `arithmetic-shift`) on a Bignum inside a tight recursive loop, you force the VM to allocate new heap structs dynamically, triggering the Garbage Collector (GC) relentlessly and destroying execution time.
 
-| Architecture | Data Representation | Memory Domain | Opcode Execution | GC Churn |
+<div align="center">
+
+| Architecture Level | Data Representation | Memory Domain | Opcode Execution | GC Churn |
 | :--- | :--- | :--- | :--- | :--- |
-| **Standard DP Array** | `(make-vector)` of vectors | Deep Heap Fragmentation | Pointer dereferencing overhead | Severe |
+| **Standard DP Matrix** | `(make-vector)` of vectors | Deep Heap Fragmentation | Pointer dereferencing overhead | Severe |
 | **Monolithic 546-bit** | Bignum Object (`struct`) | Heap (Dynamic Allocation) | Multi-word ALU emulation | High |
-| **Our Engine** | Flat vector of **21-bit Fixnums** | **CPU Registers (L1 Cache)** | **Native hardware instructions** | **Zero** |
+| **Our Engine** | Flat vector of **21-bit Fixnums** | **CPU Registers (L1 Cache)** | **Native hardware instructions** | **Absolute Zero** |
+
+</div>
 
 ---
 
@@ -64,19 +68,19 @@ Instead of compiling the entire string into one massive 546-bit integer (which t
 The problem constraints strictly dictate `s.length <= 20`. This means the spatial coordinates of any character can be losslessly encoded into a `21-bit` block. 
 Because $21 < 62$, every single element inside our vector `m` is mathematically guaranteed to remain an **Unboxed Fixnum**. The GC is effectively blinded; it sees absolutely no objects being created during the string scan.
 
-> **Visualizing the Fixnum Dimensional Split**
+> **Visualizing the Fixnum Dimensional Split (64-bit Register)**
 > ```text
-> Vector Index 0 ('a') ➜ [ 000000000000000010010 ] (Bits represent indices where 'a' exists)
-> Vector Index 1 ('b') ➜ [ 000000000000000000100 ] (Bits represent indices where 'b' exists)
-> ...
-> Vector Index 25 ('z') ➜ [ 000000000000000000000 ]
+> 63                                                           2 1 0 (Tags)
+> [000000000000000000000000000000000000000000|00000000000000010010|0] ➜ Index 0 ('a')
+> [000000000000000000000000000000000000000000|00000000000000000100|0] ➜ Index 1 ('b')
 > ```
+> *The trailing `0` tag informs the Chez Scheme VM that this is a raw CPU value, skipping the heap entirely.*
 
 ---
 
 ## Ⅳ. The Temporal Engine: Quantum TCO
 
-Racket is a functional language. It does not possess a Walrus operator (`:=`) or traditional `while` loops. We manage our Non-deterministic Finite Automaton (NFA) state using **Tail-Call Optimization (TCO)** via named `let`.
+Racket is a functional language. It does not possess mutable `while` loops without significant overhead. We manage our Non-deterministic Finite Automaton (NFA) state using **Tail-Call Optimization (TCO)** via named `let`.
 
 We track our current position in the string using a single Fixnum integer: `v`. You can conceptualize `v` as a quantum superposition of all our active NFA states.
 
@@ -105,10 +109,10 @@ graph TD
     J -->|Valid| K((("Match<br/>Accepted")))
     J -->|Invalid| L((("Match<br/>Rejected")))
 
-    classDef default fill:#0d1117,stroke:#30363d,stroke-width:2px,color:#c9d1d9;
-    classDef highlight fill:#1f6feb,stroke:#58a6ff,stroke-width:2px,color:#ffffff;
-    classDef terminate fill:#da3633,stroke:#ff7b72,stroke-width:2px,color:#ffffff;
-    classDef accept fill:#238636,stroke:#2ea043,stroke-width:2px,color:#ffffff;
+    classDef default fill:#0d1117,stroke:#30363d,stroke-width:1px,color:#c9d1d9;
+    classDef highlight fill:#330006,stroke:#9E0013,stroke-width:2px,color:#ffffff;
+    classDef terminate fill:#3d0000,stroke:#ff4d4d,stroke-width:2px,color:#ffffff;
+    classDef accept fill:#003311,stroke:#2ea043,stroke-width:2px,color:#ffffff;
     
     class A,K accept;
     class I,L terminate;
@@ -122,7 +126,7 @@ graph TD
 The Kleene star (`*`) introduces a combinatorial explosion in naive backtracking engines. We resolve it strictly through hardware-level ALU bitwise logic.
 
 ### 1. The Wildcard Star 
-When the engine encounters a wildcard star, the active state must flood-fill the remaining string length. We execute a **two's complement isolation**:
+When the engine encounters a wildcard star (`.*`), the active state must flood-fill the remaining string length. We execute a **two's complement isolation**:
 ```racket
 (bitwise-ior v (- (arithmetic-shift 1 (add1 l)) (bitwise-and v (- v))))
 ```
@@ -204,7 +208,7 @@ The Chez Scheme VM recognizes this exact functional shape. Because `f` is in the
     </tr>
     <tr>
       <td align="center">
-        <img src="https://ghchart.rshah.org/0075ff/taro902" width="450" alt="commit pulse"/>
+        <img src="https://ghchart.rshah.org/9E0013/taro902" width="450" alt="commit pulse"/>
       </td>
       <td align="center">
         <img src="https://api.star-history.com/svg?repos=taro902/Leetcode-Solution&type=Date" width="450" alt="star history"/>
