@@ -1523,12 +1523,11 @@ The tree below mirrors the repository at the last commit. Folders first, files a
 │       └── 📁 racket/
 │           ├── 📖 README.md
 │           └── 🟪 solution.rkt
-├── 🔵 generator_sakral.py
 ├── ⚖️ LICENSE
 └── 📖 README.md
 ```
 
-📊 924 files · 555 folders
+📊 923 files · 555 folders
 <!-- AUTO-TREE:END -->
 
 ## 4. The live vault
